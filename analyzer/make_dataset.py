@@ -2,30 +2,40 @@ import sys
 from glob import glob
 
 from features import features
+import json
 
 
 def get_csp(test_csp_id):
-    with open("testing_csp_list.txt", 'r') as f:
+    with open("sampled_testing_csp_list.txt", 'r') as f:
         for number, line in enumerate(f):
             if number == test_csp_id:
                 return line.strip()
     return 0
 
-def get_page(test_page_id):
-    if test_page_id >= 100000000:
-        test_page_id = test_page_id % 100000000
-        with open("status_test_page_numbering.txt", 'r') as f:
-            for number, line in enumerate(f):
-                if number+1 == test_page_id:
-                    return line.strip()
-        return 0
+# def get_page(test_page_id):
+#     if test_page_id >= 100000000:
+#         test_page_id = test_page_id % 100000000
+#         with open("status_test_page_numbering.txt", 'r') as f:
+#             for number, line in enumerate(f):
+#                 if number+1 == test_page_id:
+#                     return line.strip()
+#         return 0
 
-    else:
-        with open("test_page_numbering.txt", 'r') as f:
-            for number, line in enumerate(f):
-                if number == test_page_id:
-                    return line.strip()
-        return 0
+#     else:
+#         with open("test_page_numbering.txt", 'r') as f:
+#             for number, line in enumerate(f):
+#                 if number == test_page_id:
+#                     return line.strip()
+#         return 0
+
+# with open("test.html", "r") as f:
+#     all_html_list = f.readlines()
+#     PAGE_DICT = {
+#         idx: content for idx, content in enumerate(all_html_list)
+#     }
+
+# def get_page(test_page_id):
+#     return PAGE_DICT[test_page_id] if test_page_id in PAGE_DICT else 0
 
 def extract_csp_features(csp_features, features, csp_path):
     test_csp_id = int(csp_path.split("_")[-1].split(".csv")[0])
@@ -96,14 +106,27 @@ def extract_csp_features(csp_features, features, csp_path):
                 continue
             csp_features[features['csp'].index(col_name)] = 1
 
+# def extract_page_features(page_features, features, test_page):
+#     page_content = get_page(test_page)
+#     page_elements = []
+#     for i in page_content.split("==page"):
+#         if "==" in i:
+#             page_elements.append(int(i.split("==")[0]))
+#     for i in page_elements:
+#         page_features[i] = 1
+
+with open("../page_features.json", "r") as f:
+    global_page_features = json.load(f)
+
+# page_feature_dict = {}
 def extract_page_features(page_features, features, test_page):
-    page_content = get_page(test_page)
-    page_elements = []
-    for i in page_content.split("==page"):
-        if "==" in i:
-            page_elements.append(int(i.split("==")[0]))
-    for i in page_elements:
+    exsited_features = global_page_features[str(test_page)]
+    for i in exsited_features:
+        assert i < len(page_features)
         page_features[i] = 1
+    # if (len(page_features)) not in page_feature_dict:
+    #     page_feature_dict[len(page_features)] = 0
+    # page_feature_dict[len(page_features)] += 1
 
 def extract_features(test_page, csv_path, executed):
     csp_features = []
@@ -194,6 +217,7 @@ def make_dataset(csv_path):
 
 
     for i in chrome_100  + list(union_empty_set - chrome_empty_false_set - firefox_empty_false_set - safari_empty_false_set):
+        # namely, chrome_100 + chrome_empty_set.intersection(firefox_empty_set).intersection(safari_empty_set)
         if not i in union_empty_set:
             continue
         executed = []
@@ -274,3 +298,4 @@ if __name__ == '__main__':
     db_path = sys.argv[1]
 
     make_dataset(db_path)
+    # print(page_feature_dict)

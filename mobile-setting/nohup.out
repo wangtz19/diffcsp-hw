@@ -1,0 +1,2326 @@
+ERROR   | Unknown AVD name [device_{1}], use -list-avds to see valid list.
+ERROR   | HOME is defined but there is no file device_{1}.ini in $HOME/.android/avd
+ERROR   | (Note: Directories are searched in the order $ANDROID_AVD_HOME, $ANDROID_SDK_HOME/avd and $HOME/.android/avd)
+INFO    | Android emulator version 33.1.23.0 (build_id 11150993) (CL:N/A)
+INFO    | Android emulator version 33.1.23.0 (build_id 11150993) (CL:N/A)
+DEBUG   | Current emulator version 33.1.23 is the same as the required version 33.1.23.
+INFO    | Found systemPath /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64/
+WARNING | Please update the emulator to one that supports the feature(s): Vulkan
+WARNING | FeatureControl is requesting a non existing feature.
+WARNING | Your GPU drivers may have a bug. Switching to software rendering.
+I1214 07:22:03.080790 3913986 HealthMonitor.cpp:279] HealthMonitor disabled.
+I1214 07:22:03.162626 3913986 FrameBuffer.cpp:486] Graphics Adapter Vendor Google (Google Inc.)
+I1214 07:22:03.162673 3913986 FrameBuffer.cpp:487] Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+I1214 07:22:03.162682 3913986 FrameBuffer.cpp:488] Graphics API Version OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)
+I1214 07:22:03.162689 3913986 FrameBuffer.cpp:489] Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+I1214 07:22:03.162697 3913986 FrameBuffer.cpp:490] Graphics Device Extensions N/A
+INFO    | Storing crashdata in: , detection is enabled for process: 3913986
+INFO    | Duplicate loglines will be removed, if you wish to see each individual line launch with the -log-nofilter flag.
+DEBUG   | autoconfig: -skin 1080x2160
+DEBUG   | autoconfig: -skindir (null)
+DEBUG   | autoconfig: -kernel /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu
+DEBUG   | Target arch = 'x86_64'
+DEBUG   | Auto-detect: Kernel image requires new device naming scheme.
+DEBUG   | Auto-detect: Kernel does not support YAFFS2 partitions.
+DEBUG   | autoconfig: -ramdisk /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img
+DEBUG   | Using initial system image: /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img
+DEBUG   | Using initial vendor image: /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img
+DEBUG   | autoconfig: -initdata /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//userdata.img
+DEBUG   | autoconfig: -cache /root/.android/avd/../avd/device_1.avd/cache.img
+DEBUG   | Physical RAM size: 4096MB
+DEBUG   | VM heap size 0MB is below hardware specified minimum of 576MB,setting it to that value
+DEBUG   | System image is read only
+DEBUG   | Found 1 DNS servers:
+DEBUG   | 	127.0.0.53
+DEBUG   | found magic skin width=1080 height=2160 bpp=16
+DEBUG   | File System is ext4, do not disable QuickbootFileBacked feature
+DEBUG   | statvfs('/root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img') failed: No such file or directory
+DEBUG   | Requested console port 5554: Inferring adb port 5555.
+DEBUG   | Creating ext4 userdata partition: /root/.android/avd/../avd/device_1.avd/data
+DEBUG   | path_copy_file: source file is un-readable: /root/.android/adbkey.pub
+DEBUG   | Fall back to adbkey /root/.android/adbkey successfully
+Creating filesystem with parameters:
+    Size: 6442450944
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 8192
+    Inode size: 256
+    Journal blocks: 24576
+    Label: 
+    Blocks: 1572864
+    Block groups: 48
+    Reserved block group size: 383
+Created filesystem with 27/393216 inodes and 52348/1572864 blocks
+DEBUG   | Creating empty ext4 cache partition: /root/.android/avd/../avd/device_1.avd/cache.img
+Creating filesystem with parameters:
+    Size: 69206016
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 4224
+    Inode size: 256
+    Journal blocks: 1024
+    Label: 
+    Blocks: 16896
+    Block groups: 1
+    Reserved block group size: 7
+Created filesystem with 11/4224 inodes and 1302/16896 blocks
+DEBUG   | CPU Acceleration: working
+DEBUG   | CPU Acceleration status: KVM (version 12) is installed and usable.
+DEBUG   | handleCpuAcceleration: feature check for hvf
+DEBUG   | registered 'boot-properties' qemud service
+DEBUG   | Adding boot property: 'qemu.cmdline' = 'androidboot.logcat=*:V androidboot.consolepipe=qemu_pipe,pipe:logcat'
+DEBUG   | Adding boot property: 'qemu.logcat' = 'start'
+DEBUG   |  no root specified: 
+DEBUG   | Path:/home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb protocol version: 41
+DEBUG   | Found: 1 adb executables
+DEBUG   | Adb: /home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb
+DEBUG   | Path:/home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb protocol version: 41
+INFO    | No consent for crashreport c18e4b0f-384d-4683-9ce6-81e4765fb841, deleting.
+library_mode swangle_indirect gpu mode swangle_indirect
+DEBUG   | GPU emulation enabled using 'swangle_indirect' mode
+DEBUG   | Initializing hardware OpenGLES emulation support
+DEBUG   | create display 0
+DEBUG   | setDisplayPose 0 x 0 y 0 w 1080 h 2160 dpi 0
+INFO    | Setting vsync to 60 hz
+DEBUG   | Found 1 DNS servers:
+DEBUG   | 	127.0.0.53
+INFO    | Content of hardware configuration file:
+INFO    | 	hw.cpu.arch = x86_64
+INFO    | 	hw.cpu.ncore = 2
+INFO    | 	hw.ramSize = 4096
+INFO    | 	hw.screen = no-touch
+INFO    | 	hw.mainKeys = false
+INFO    | 	hw.trackBall = false
+INFO    | 	hw.keyboard = false
+INFO    | 	hw.keyboard.lid = true
+INFO    | 	hw.keyboard.charmap = qwerty2
+INFO    | 	hw.dPad = false
+INFO    | 	hw.rotaryInput = false
+INFO    | 	hw.gsmModem = true
+INFO    | 	hw.gps = true
+INFO    | 	hw.battery = true
+INFO    | 	hw.accelerometer = true
+INFO    | 	hw.accelerometer_uncalibrated = true
+INFO    | 	hw.gyroscope = true
+INFO    | 	hw.audioInput = true
+INFO    | 	hw.audioOutput = true
+INFO    | 	hw.sdCard = true
+INFO    | 	disk.cachePartition = true
+INFO    | 	disk.cachePartition.path = /root/.android/avd/../avd/device_1.avd/cache.img
+INFO    | 	disk.cachePartition.size = 66m
+INFO    | 	test.quitAfterBootTimeOut = -1
+INFO    | 	test.delayAdbTillBootComplete = 0
+INFO    | 	test.monitorAdb = 0
+INFO    | 	hw.lcd.width = 1080
+INFO    | 	hw.lcd.height = 2160
+INFO    | 	hw.lcd.depth = 16
+INFO    | 	hw.lcd.circular = false
+INFO    | 	hw.lcd.density = 440
+INFO    | 	hw.lcd.backlight = true
+INFO    | 	hw.lcd.vsync = 60
+INFO    | 	hw.gltransport = pipe
+INFO    | 	hw.gltransport.asg.writeBufferSize = 1048576
+INFO    | 	hw.gltransport.asg.writeStepSize = 4096
+INFO    | 	hw.gltransport.asg.dataRingSize = 32768
+INFO    | 	hw.gltransport.drawFlushInterval = 800
+INFO    | 	hw.displayRegion.0.1.xOffset = -1
+INFO    | 	hw.displayRegion.0.1.yOffset = -1
+INFO    | 	hw.displayRegion.0.1.width = 0
+INFO    | 	hw.displayRegion.0.1.height = 0
+INFO    | 	hw.displayRegion.0.2.xOffset = -1
+INFO    | 	hw.displayRegion.0.2.yOffset = -1
+INFO    | 	hw.displayRegion.0.2.width = 0
+INFO    | 	hw.displayRegion.0.2.height = 0
+INFO    | 	hw.displayRegion.0.3.xOffset = -1
+INFO    | 	hw.displayRegion.0.3.yOffset = -1
+INFO    | 	hw.displayRegion.0.3.width = 0
+INFO    | 	hw.displayRegion.0.3.height = 0
+INFO    | 	hw.display1.width = 0
+INFO    | 	hw.display1.height = 0
+INFO    | 	hw.display1.density = 0
+INFO    | 	hw.display1.xOffset = -1
+INFO    | 	hw.display1.yOffset = -1
+INFO    | 	hw.display1.flag = 0
+INFO    | 	hw.display2.width = 0
+INFO    | 	hw.display2.height = 0
+INFO    | 	hw.display2.density = 0
+INFO    | 	hw.display2.xOffset = -1
+INFO    | 	hw.display2.yOffset = -1
+INFO    | 	hw.display2.flag = 0
+INFO    | 	hw.display3.width = 0
+INFO    | 	hw.display3.height = 0
+INFO    | 	hw.display3.density = 0
+INFO    | 	hw.display3.xOffset = -1
+INFO    | 	hw.display3.yOffset = -1
+INFO    | 	hw.display3.flag = 0
+INFO    | 	hw.multi_display_window = false
+INFO    | 	hw.hotplug_multi_display = false
+INFO    | 	hw.gpu.enabled = true
+INFO    | 	hw.gpu.mode = swangle_indirect
+INFO    | 	hw.initialOrientation = portrait
+INFO    | 	hw.camera.back = none
+INFO    | 	hw.camera.front = none
+INFO    | 	vm.heapSize = 576
+INFO    | 	hw.sensors.light = true
+INFO    | 	hw.sensors.pressure = true
+INFO    | 	hw.sensors.humidity = true
+INFO    | 	hw.sensors.proximity = true
+INFO    | 	hw.sensors.magnetic_field = true
+INFO    | 	hw.sensors.magnetic_field_uncalibrated = true
+INFO    | 	hw.sensors.gyroscope_uncalibrated = true
+INFO    | 	hw.sensors.orientation = true
+INFO    | 	hw.sensors.temperature = true
+INFO    | 	hw.sensors.rgbclight = false
+INFO    | 	hw.sensor.hinge = false
+INFO    | 	hw.sensor.hinge.count = 0
+INFO    | 	hw.sensor.hinge.type = 0
+INFO    | 	hw.sensor.hinge.sub_type = 0
+INFO    | 	hw.sensor.hinge.resizable.config = 1
+INFO    | 	hw.sensor.hinge.fold_to_displayRegion.0.1_at_posture = 1
+INFO    | 	hw.sensor.roll = false
+INFO    | 	hw.sensor.roll.count = 0
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.1_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.2_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.3_at_posture = 6
+INFO    | 	hw.sensors.heart_rate = false
+INFO    | 	hw.sensors.wrist_tilt = false
+INFO    | 	hw.useext4 = true
+INFO    | 	hw.arc = false
+INFO    | 	hw.arc.autologin = false
+INFO    | 	hw.device.name = pixel_3
+INFO    | 	kernel.path = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu
+INFO    | 	kernel.newDeviceNaming = yes
+INFO    | 	kernel.supportsYaffs2 = no
+INFO    | 	disk.ramdisk.path = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img
+INFO    | 	disk.systemPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img
+INFO    | 	disk.systemPartition.size = 3083m
+INFO    | 	disk.vendorPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img
+INFO    | 	disk.vendorPartition.size = 800m
+INFO    | 	disk.dataPartition.path = /root/.android/avd/../avd/device_1.avd/userdata-qemu.img
+INFO    | 	disk.dataPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//userdata.img
+INFO    | 	disk.dataPartition.size = 6g
+INFO    | 	disk.encryptionKeyPartition.path = /root/.android/avd/../avd/device_1.avd/encryptionkey.img
+INFO    | 	PlayStore.enabled = false
+INFO    | 	avd.name = device_1
+INFO    | 	avd.id = device_1
+INFO    | 	fastboot.forceColdBoot = false
+INFO    | 	userdata.useQcow2 = false
+INFO    | 	firstboot.bootFromDownloadableSnapshot = true
+INFO    | 	firstboot.bootFromLocalSnapshot = true
+INFO    | 	firstboot.saveToLocalSnapshot = true
+INFO    | 	android.sdk.root = /home/wtz/courses/web-security/DiffCSP/mobile-setting
+INFO    | 	android.avd.home = /root/.android/avd
+INFO    | .
+INFO    | QEMU options list:
+INFO    | 	 argv[00] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless"
+INFO    | 	 argv[01] = "-dns-server"
+INFO    | 	 argv[02] = "127.0.0.53"
+INFO    | 	 argv[03] = "-no-audio"
+INFO    | 	 argv[04] = "-mem-path"
+INFO    | 	 argv[05] = "/root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img"
+INFO    | 	 argv[06] = "-serial"
+INFO    | 	 argv[07] = "null"
+INFO    | 	 argv[08] = "-android-ports"
+INFO    | 	 argv[09] = "5554,5555"
+INFO    | 	 argv[10] = "-device"
+INFO    | 	 argv[11] = "goldfish_pstore,addr=0xff018000,size=0x10000,file=/root/.android/avd/../avd/device_1.avd/data/misc/pstore/pstore.bin"
+INFO    | 	 argv[12] = "-cpu"
+INFO    | 	 argv[13] = "android64-xts"
+INFO    | 	 argv[14] = "-enable-kvm"
+INFO    | 	 argv[15] = "-smp"
+INFO    | 	 argv[16] = "cores=2"
+INFO    | 	 argv[17] = "-m"
+INFO    | 	 argv[18] = "4096"
+INFO    | 	 argv[19] = "-lcd-density"
+INFO    | 	 argv[20] = "440"
+INFO    | 	 argv[21] = "-object"
+INFO    | 	 argv[22] = "iothread,id=disk-iothread"
+INFO    | 	 argv[23] = "-nodefaults"
+INFO    | 	 argv[24] = "-kernel"
+INFO    | 	 argv[25] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu"
+INFO    | 	 argv[26] = "-initrd"
+INFO    | 	 argv[27] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img"
+INFO    | 	 argv[28] = "-drive"
+INFO    | 	 argv[29] = "if=none,index=0,id=system,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img,read-only"
+INFO    | 	 argv[30] = "-device"
+INFO    | 	 argv[31] = "virtio-blk-pci,drive=system,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[32] = "-drive"
+INFO    | 	 argv[33] = "if=none,index=1,id=cache,if=none,file=/root/.android/avd/../avd/device_1.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[34] = "-device"
+INFO    | 	 argv[35] = "virtio-blk-pci,drive=cache,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[36] = "-drive"
+INFO    | 	 argv[37] = "if=none,index=2,id=userdata,if=none,file=/root/.android/avd/../avd/device_1.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[38] = "-device"
+INFO    | 	 argv[39] = "virtio-blk-pci,drive=userdata,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[40] = "-drive"
+INFO    | 	 argv[41] = "if=none,index=3,id=encrypt,if=none,file=/root/.android/avd/../avd/device_1.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[42] = "-device"
+INFO    | 	 argv[43] = "virtio-blk-pci,drive=encrypt,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[44] = "-drive"
+INFO    | 	 argv[45] = "if=none,index=4,id=vendor,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img,read-only"
+INFO    | 	 argv[46] = "-device"
+INFO    | 	 argv[47] = "virtio-blk-pci,drive=vendor,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[48] = "-netdev"
+INFO    | 	 argv[49] = "user,id=mynet"
+INFO    | 	 argv[50] = "-device"
+INFO    | 	 argv[51] = "virtio-net-pci,netdev=mynet"
+INFO    | 	 argv[52] = "-device"
+INFO    | 	 argv[53] = "virtio-rng-pci"
+INFO    | 	 argv[54] = "-show-cursor"
+INFO    | 	 argv[55] = "-L"
+INFO    | 	 argv[56] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/lib/pc-bios"
+INFO    | 	 argv[57] = "-soundhw"
+INFO    | 	 argv[58] = "hda"
+INFO    | 	 argv[59] = "-vga"
+INFO    | 	 argv[60] = "none"
+INFO    | 	 argv[61] = "-append"
+INFO    | 	 argv[62] = "no_timer_check 8250.nr_uarts=1 clocksource=pit console=0 cma=292M@0-4G mac80211_hwsim.channels=2 loop.max_part=7 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 printk.devkmsg=on qemu=1 androidboot.hardware=ranchu androidboot.serialno=EMULATOR33X1X23X0 android.bootanim=0 qemu.gles=1 qemu.settings.system.screen_off_timeout=2147483647 qemu.encrypt=1 qemu.vsync=60 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=196608 qemu.uirenderer=skiagl qemu.dalvik.vm.heapsize=576m qemu.camera_protocol_ver=1 qemu.camera_hq_edge_processing=0 androidboot.vbmeta.size=6144 androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.digest=b9f67e285b7a2b098478e493628534ac78b3ac3015c3cb204fe8f7d6a51021bb androidboot.boot_devices=pci0000:00/0000:00:03.0 qemu.wifi=1 qemu.hwcodec.avcdec=2 qemu.hwcodec.hevcdec=2 qemu.hwcodec.vpxdec=2 android.qemud=1 qemu.avd_name=device_1"
+INFO    | 	 argv[63] = "-android-hw"
+INFO    | 	 argv[64] = "/root/.android/avd/../avd/device_1.avd/hardware-qemu.ini"
+INFO    | Concatenated QEMU options: /home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless -dns-server 127.0.0.53 -no-audio -mem-path /root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img -serial null -android-ports 5554,5555 -device goldfish_pstore,addr=0xff018000,size=0x10000,file=/root/.android/avd/../avd/device_1.avd/data/misc/pstore/pstore.bin -cpu android64-xts -enable-kvm -smp cores=2 -m 4096 -lcd-density 440 -object iothread,id=disk-iothread -nodefaults -kernel /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu -initrd /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img -drive if=none,index=0,id=system,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img,read-only -device virtio-blk-pci,drive=system,iothread=disk-iothread,modern-pio-notify -drive if=none,index=1,id=cache,if=none,file=/root/.android/avd/../avd/device_1.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=cache,iothread=disk-iothread,modern-pio-notify -drive if=none,index=2,id=userdata,if=none,file=/root/.android/avd/../avd/device_1.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=userdata,iothread=disk-iothread,modern-pio-notify -drive if=none,index=3,id=encrypt,if=none,file=/root/.android/avd/../avd/device_1.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=encrypt,iothread=disk-iothread,modern-pio-notify -drive if=none,index=4,id=vendor,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img,read-only -device virtio-blk-pci,drive=vendor,iothread=disk-iothread,modern-pio-notify -netdev user,id=mynet -device virtio-net-pci,netdev=mynet -device vi
+DEBUG   | Android qemu version 33.1.23.0 (build_id 11150993) (CL:N/A)
+DEBUG   | Starting QEMU main loop
+DEBUG   | Adding boot property: 'ro.opengles.version' = '196608'
+DEBUG   | Adding boot property: 'qemu.sf.fake_camera' = 'none'
+DEBUG   | Adding boot property: 'qemu.adb.secure' = '1'
+DEBUG   | Adding boot property: 'dalvik.vm.heapsize' = '576m'
+DEBUG   | Adding boot property: 'qemu.hw.mainkeys' = '0'
+DEBUG   | Adding boot property: 'qemu.sf.lcd_density' = '440'
+DEBUG   | goldfish_events.have-dpad: false
+DEBUG   | goldfish_events.have-trackball: false
+DEBUG   | goldfish_events.have-camera: false
+DEBUG   | goldfish_events.have-keyboard: false
+DEBUG   | goldfish_events.have-lidswitch: true
+DEBUG   | goldfish_events.have-tabletmode: false
+DEBUG   | goldfish_events.have-touch: false
+DEBUG   | goldfish_events.have-multitouch: false
+DEBUG   | Adding boot property: 'net.wifi_mac_prefix' = '5554'
+pc_memory_init: above 4g size: 40000000
+DEBUG   | Not using any http proxy
+DEBUG   | Adding boot property: 'qemu.timezone' = 'Etc/UTC'
+DEBUG   | android_hw_fingerprint_init: fingerprint qemud listen service initialized
+DEBUG   | emulator_window_fb_rotate
+I1214 07:22:03.375313 3914021 FrameBuffer.cpp:3682] setDisplayConfigs w 1080 h 2160 dpiX 440 dpiY 440
+DEBUG   | setDisplayPose 0 x 0 y 0 w 1080 h 2160 dpi 0
+I1214 07:22:03.375353 3914021 FrameBuffer.cpp:3695] setDisplayActiveConfig 0
+DEBUG   | config multidisplay with config.ini 0x0 0x0 0x0
+DEBUG   | No acpi ini file provided, using default
+INFO    | Cold boot: requested by the user
+WARNING | Cold boot:  requested by the user
+WARNING | Failed to process .ini file /root/.android/emu-update-last-check.ini for reading.
+DEBUG   | No acpi ini file provided, using default
+INFO    | Your emulator is out of date, please update by launching Android Studio:
+ - Start Android Studio
+ - Select menu "Tools > Android > SDK Manager"
+ - Click "SDK Tools" tab
+ - Check "Android Emulator" checkbox
+ - Click "OK"
+WARNING | Failed to process .ini file /root/.android/emu-update-last-check.ini for reading.
+DEBUG   | _hwFingerprint_connect: connect finger print listen is called
+DEBUG   | got message from guest system fingerprint HAL
+DEBUG   | onGuestSendCommand: [0x556b001c2ea0] Adb connected, start proxing data
+INFO    | Boot completed in 44806 ms
+INFO    | Increasing screen off timeout, logcat buffer size to 2M.
+DEBUG   | applying overlayName pixel_3
+E1214 07:22:51.388401 3914205 FrameBuffer.cpp:3765] Failed to find ColorBuffer:29
+E1214 07:22:55.684873 3914205 FrameBuffer.cpp:3765] Failed to find ColorBuffer:31
+E1214 07:22:55.684932 3914205 FrameBuffer.cpp:3765] Failed to find ColorBuffer:31
+E1214 07:22:55.684949 3914205 FrameBuffer.cpp:3765] Failed to find ColorBuffer:63
+E1214 07:22:55.684962 3914205 FrameBuffer.cpp:3765] Failed to find ColorBuffer:31
+E1214 07:22:55.684974 3914205 FrameBuffer.cpp:3765] Failed to find ColorBuffer:31
+DEBUG   | Timed out with running command 
+DEBUG   | Registering pipe service multidisplay
+DEBUG   | MultiDisplayPipe created 0x556b03ee95e0
+DEBUG   | MultiDisplayPipe recevied QUERY
+DEBUG   | MultiDisplayPipe send add id 0 width 1080 height 2160 dpi 0 flag 0
+DEBUG   | Timed out with running command 
+ERROR   | detected a hanging thread 'QEMU2 CPU0 thread'. No response for 15681 ms
+ERROR   | detected a hanging thread 'QEMU2 CPU1 thread'. No response for 19444 ms
+ERROR   | detected a hanging thread 'QEMU2 main loop'. No response for 16409 ms
+ERROR   | detected a hanging thread 'QEMU2 main loop'. No response for 15742 ms
+INFO    | Android emulator version 33.1.23.0 (build_id 11150993) (CL:N/A)
+DEBUG   | Current emulator version 33.1.23 is the same as the required version 33.1.23.
+INFO    | Found systemPath /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64/
+WARNING | Please update the emulator to one that supports the feature(s): Vulkan
+WARNING | FeatureControl is requesting a non existing feature.
+WARNING | Your GPU drivers may have a bug. Switching to software rendering.
+I1214 07:28:07.841549 3916954 HealthMonitor.cpp:279] HealthMonitor disabled.
+I1214 07:28:07.924696 3916954 FrameBuffer.cpp:486] Graphics Adapter Vendor Google (Google Inc.)
+I1214 07:28:07.924748 3916954 FrameBuffer.cpp:487] Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+I1214 07:28:07.924757 3916954 FrameBuffer.cpp:488] Graphics API Version OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)
+I1214 07:28:07.924764 3916954 FrameBuffer.cpp:489] Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+I1214 07:28:07.924772 3916954 FrameBuffer.cpp:490] Graphics Device Extensions N/A
+INFO    | Storing crashdata in: , detection is enabled for process: 3916954
+INFO    | Duplicate loglines will be removed, if you wish to see each individual line launch with the -log-nofilter flag.
+DEBUG   | autoconfig: -skin 1080x2160
+DEBUG   | autoconfig: -skindir (null)
+DEBUG   | autoconfig: -kernel /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu
+DEBUG   | Target arch = 'x86_64'
+DEBUG   | Auto-detect: Kernel image requires new device naming scheme.
+DEBUG   | Auto-detect: Kernel does not support YAFFS2 partitions.
+DEBUG   | autoconfig: -ramdisk /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img
+DEBUG   | Using initial system image: /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img
+DEBUG   | Using initial vendor image: /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img
+DEBUG   | autoconfig: -initdata /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//userdata.img
+DEBUG   | autoconfig: -cache /root/.android/avd/../avd/device_1.avd/cache.img
+DEBUG   | Physical RAM size: 4096MB
+DEBUG   | VM heap size 0MB is below hardware specified minimum of 576MB,setting it to that value
+DEBUG   | System image is read only
+DEBUG   | Found 1 DNS servers:
+DEBUG   | 	127.0.0.53
+DEBUG   | found magic skin width=1080 height=2160 bpp=16
+DEBUG   | File System is ext4, do not disable QuickbootFileBacked feature
+DEBUG   | statvfs('/root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img') failed: No such file or directory
+DEBUG   | Requested console port 5554: Inferring adb port 5555.
+DEBUG   | Creating ext4 userdata partition: /root/.android/avd/../avd/device_1.avd/data
+DEBUG   | path_copy_file: source file is un-readable: /root/.android/adbkey.pub
+DEBUG   | Fall back to adbkey /root/.android/adbkey successfully
+Creating filesystem with parameters:
+    Size: 6442450944
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 8192
+    Inode size: 256
+    Journal blocks: 24576
+    Label: 
+    Blocks: 1572864
+    Block groups: 48
+    Reserved block group size: 383
+Created filesystem with 27/393216 inodes and 52348/1572864 blocks
+DEBUG   | Creating empty ext4 cache partition: /root/.android/avd/../avd/device_1.avd/cache.img
+Creating filesystem with parameters:
+    Size: 69206016
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 4224
+    Inode size: 256
+    Journal blocks: 1024
+    Label: 
+    Blocks: 16896
+    Block groups: 1
+    Reserved block group size: 7
+Created filesystem with 11/4224 inodes and 1302/16896 blocks
+DEBUG   | CPU Acceleration: working
+DEBUG   | CPU Acceleration status: KVM (version 12) is installed and usable.
+DEBUG   | handleCpuAcceleration: feature check for hvf
+DEBUG   | registered 'boot-properties' qemud service
+DEBUG   | Adding boot property: 'qemu.cmdline' = 'androidboot.logcat=*:V androidboot.consolepipe=qemu_pipe,pipe:logcat'
+DEBUG   | Adding boot property: 'qemu.logcat' = 'start'
+DEBUG   |  no root specified: 
+DEBUG   | Path:/home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb protocol version: 41
+DEBUG   | Found: 1 adb executables
+DEBUG   | Adb: /home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb
+DEBUG   | Path:/home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb protocol version: 41
+INFO    | No consent for crashreport c18e4b0f-384d-4683-9ce6-81e4765fb841, deleting.
+library_mode swangle_indirect gpu mode swangle_indirect
+DEBUG   | GPU emulation enabled using 'swangle_indirect' mode
+DEBUG   | Initializing hardware OpenGLES emulation support
+DEBUG   | create display 0
+DEBUG   | setDisplayPose 0 x 0 y 0 w 1080 h 2160 dpi 0
+INFO    | Setting vsync to 60 hz
+DEBUG   | Found 1 DNS servers:
+DEBUG   | 	127.0.0.53
+INFO    | Content of hardware configuration file:
+INFO    | 	hw.cpu.arch = x86_64
+INFO    | 	hw.cpu.ncore = 1
+INFO    | 	hw.ramSize = 4096
+INFO    | 	hw.screen = no-touch
+INFO    | 	hw.mainKeys = false
+INFO    | 	hw.trackBall = false
+INFO    | 	hw.keyboard = false
+INFO    | 	hw.keyboard.lid = true
+INFO    | 	hw.keyboard.charmap = qwerty2
+INFO    | 	hw.dPad = false
+INFO    | 	hw.rotaryInput = false
+INFO    | 	hw.gsmModem = true
+INFO    | 	hw.gps = true
+INFO    | 	hw.battery = true
+INFO    | 	hw.accelerometer = true
+INFO    | 	hw.accelerometer_uncalibrated = true
+INFO    | 	hw.gyroscope = true
+INFO    | 	hw.audioInput = true
+INFO    | 	hw.audioOutput = true
+INFO    | 	hw.sdCard = true
+INFO    | 	disk.cachePartition = true
+INFO    | 	disk.cachePartition.path = /root/.android/avd/../avd/device_1.avd/cache.img
+INFO    | 	disk.cachePartition.size = 66m
+INFO    | 	test.quitAfterBootTimeOut = -1
+INFO    | 	test.delayAdbTillBootComplete = 0
+INFO    | 	test.monitorAdb = 0
+INFO    | 	hw.lcd.width = 1080
+INFO    | 	hw.lcd.height = 2160
+INFO    | 	hw.lcd.depth = 16
+INFO    | 	hw.lcd.circular = false
+INFO    | 	hw.lcd.density = 440
+INFO    | 	hw.lcd.backlight = true
+INFO    | 	hw.lcd.vsync = 60
+INFO    | 	hw.gltransport = pipe
+INFO    | 	hw.gltransport.asg.writeBufferSize = 1048576
+INFO    | 	hw.gltransport.asg.writeStepSize = 4096
+INFO    | 	hw.gltransport.asg.dataRingSize = 32768
+INFO    | 	hw.gltransport.drawFlushInterval = 800
+INFO    | 	hw.displayRegion.0.1.xOffset = -1
+INFO    | 	hw.displayRegion.0.1.yOffset = -1
+INFO    | 	hw.displayRegion.0.1.width = 0
+INFO    | 	hw.displayRegion.0.1.height = 0
+INFO    | 	hw.displayRegion.0.2.xOffset = -1
+INFO    | 	hw.displayRegion.0.2.yOffset = -1
+INFO    | 	hw.displayRegion.0.2.width = 0
+INFO    | 	hw.displayRegion.0.2.height = 0
+INFO    | 	hw.displayRegion.0.3.xOffset = -1
+INFO    | 	hw.displayRegion.0.3.yOffset = -1
+INFO    | 	hw.displayRegion.0.3.width = 0
+INFO    | 	hw.displayRegion.0.3.height = 0
+INFO    | 	hw.display1.width = 0
+INFO    | 	hw.display1.height = 0
+INFO    | 	hw.display1.density = 0
+INFO    | 	hw.display1.xOffset = -1
+INFO    | 	hw.display1.yOffset = -1
+INFO    | 	hw.display1.flag = 0
+INFO    | 	hw.display2.width = 0
+INFO    | 	hw.display2.height = 0
+INFO    | 	hw.display2.density = 0
+INFO    | 	hw.display2.xOffset = -1
+INFO    | 	hw.display2.yOffset = -1
+INFO    | 	hw.display2.flag = 0
+INFO    | 	hw.display3.width = 0
+INFO    | 	hw.display3.height = 0
+INFO    | 	hw.display3.density = 0
+INFO    | 	hw.display3.xOffset = -1
+INFO    | 	hw.display3.yOffset = -1
+INFO    | 	hw.display3.flag = 0
+INFO    | 	hw.multi_display_window = false
+INFO    | 	hw.hotplug_multi_display = false
+INFO    | 	hw.gpu.enabled = true
+INFO    | 	hw.gpu.mode = swangle_indirect
+INFO    | 	hw.initialOrientation = portrait
+INFO    | 	hw.camera.back = none
+INFO    | 	hw.camera.front = none
+INFO    | 	vm.heapSize = 576
+INFO    | 	hw.sensors.light = true
+INFO    | 	hw.sensors.pressure = true
+INFO    | 	hw.sensors.humidity = true
+INFO    | 	hw.sensors.proximity = true
+INFO    | 	hw.sensors.magnetic_field = true
+INFO    | 	hw.sensors.magnetic_field_uncalibrated = true
+INFO    | 	hw.sensors.gyroscope_uncalibrated = true
+INFO    | 	hw.sensors.orientation = true
+INFO    | 	hw.sensors.temperature = true
+INFO    | 	hw.sensors.rgbclight = false
+INFO    | 	hw.sensor.hinge = false
+INFO    | 	hw.sensor.hinge.count = 0
+INFO    | 	hw.sensor.hinge.type = 0
+INFO    | 	hw.sensor.hinge.sub_type = 0
+INFO    | 	hw.sensor.hinge.resizable.config = 1
+INFO    | 	hw.sensor.hinge.fold_to_displayRegion.0.1_at_posture = 1
+INFO    | 	hw.sensor.roll = false
+INFO    | 	hw.sensor.roll.count = 0
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.1_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.2_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.3_at_posture = 6
+INFO    | 	hw.sensors.heart_rate = false
+INFO    | 	hw.sensors.wrist_tilt = false
+INFO    | 	hw.useext4 = true
+INFO    | 	hw.arc = false
+INFO    | 	hw.arc.autologin = false
+INFO    | 	hw.device.name = pixel_3
+INFO    | 	kernel.path = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu
+INFO    | 	kernel.newDeviceNaming = yes
+INFO    | 	kernel.supportsYaffs2 = no
+INFO    | 	disk.ramdisk.path = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img
+INFO    | 	disk.systemPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img
+INFO    | 	disk.systemPartition.size = 3083m
+INFO    | 	disk.vendorPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img
+INFO    | 	disk.vendorPartition.size = 800m
+INFO    | 	disk.dataPartition.path = /root/.android/avd/../avd/device_1.avd/userdata-qemu.img
+INFO    | 	disk.dataPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//userdata.img
+INFO    | 	disk.dataPartition.size = 6g
+INFO    | 	disk.encryptionKeyPartition.path = /root/.android/avd/../avd/device_1.avd/encryptionkey.img
+INFO    | 	PlayStore.enabled = false
+INFO    | 	avd.name = device_1
+INFO    | 	avd.id = device_1
+INFO    | 	fastboot.forceColdBoot = false
+INFO    | 	userdata.useQcow2 = false
+INFO    | 	firstboot.bootFromDownloadableSnapshot = true
+INFO    | 	firstboot.bootFromLocalSnapshot = true
+INFO    | 	firstboot.saveToLocalSnapshot = true
+INFO    | 	android.sdk.root = /home/wtz/courses/web-security/DiffCSP/mobile-setting
+INFO    | 	android.avd.home = /root/.android/avd
+INFO    | .
+INFO    | QEMU options list:
+INFO    | 	 argv[00] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless"
+INFO    | 	 argv[01] = "-dns-server"
+INFO    | 	 argv[02] = "127.0.0.53"
+INFO    | 	 argv[03] = "-no-audio"
+INFO    | 	 argv[04] = "-mem-path"
+INFO    | 	 argv[05] = "/root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img"
+INFO    | 	 argv[06] = "-serial"
+INFO    | 	 argv[07] = "null"
+INFO    | 	 argv[08] = "-android-ports"
+INFO    | 	 argv[09] = "5554,5555"
+INFO    | 	 argv[10] = "-device"
+INFO    | 	 argv[11] = "goldfish_pstore,addr=0xff018000,size=0x10000,file=/root/.android/avd/../avd/device_1.avd/data/misc/pstore/pstore.bin"
+INFO    | 	 argv[12] = "-cpu"
+INFO    | 	 argv[13] = "android64-xts"
+INFO    | 	 argv[14] = "-enable-kvm"
+INFO    | 	 argv[15] = "-m"
+INFO    | 	 argv[16] = "4096"
+INFO    | 	 argv[17] = "-lcd-density"
+INFO    | 	 argv[18] = "440"
+INFO    | 	 argv[19] = "-object"
+INFO    | 	 argv[20] = "iothread,id=disk-iothread"
+INFO    | 	 argv[21] = "-nodefaults"
+INFO    | 	 argv[22] = "-kernel"
+INFO    | 	 argv[23] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu"
+INFO    | 	 argv[24] = "-initrd"
+INFO    | 	 argv[25] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img"
+INFO    | 	 argv[26] = "-drive"
+INFO    | 	 argv[27] = "if=none,index=0,id=system,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img,read-only"
+INFO    | 	 argv[28] = "-device"
+INFO    | 	 argv[29] = "virtio-blk-pci,drive=system,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[30] = "-drive"
+INFO    | 	 argv[31] = "if=none,index=1,id=cache,if=none,file=/root/.android/avd/../avd/device_1.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[32] = "-device"
+INFO    | 	 argv[33] = "virtio-blk-pci,drive=cache,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[34] = "-drive"
+INFO    | 	 argv[35] = "if=none,index=2,id=userdata,if=none,file=/root/.android/avd/../avd/device_1.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[36] = "-device"
+INFO    | 	 argv[37] = "virtio-blk-pci,drive=userdata,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[38] = "-drive"
+INFO    | 	 argv[39] = "if=none,index=3,id=encrypt,if=none,file=/root/.android/avd/../avd/device_1.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[40] = "-device"
+INFO    | 	 argv[41] = "virtio-blk-pci,drive=encrypt,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[42] = "-drive"
+INFO    | 	 argv[43] = "if=none,index=4,id=vendor,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img,read-only"
+INFO    | 	 argv[44] = "-device"
+INFO    | 	 argv[45] = "virtio-blk-pci,drive=vendor,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[46] = "-netdev"
+INFO    | 	 argv[47] = "user,id=mynet"
+INFO    | 	 argv[48] = "-device"
+INFO    | 	 argv[49] = "virtio-net-pci,netdev=mynet"
+INFO    | 	 argv[50] = "-device"
+INFO    | 	 argv[51] = "virtio-rng-pci"
+INFO    | 	 argv[52] = "-show-cursor"
+INFO    | 	 argv[53] = "-L"
+INFO    | 	 argv[54] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/lib/pc-bios"
+INFO    | 	 argv[55] = "-soundhw"
+INFO    | 	 argv[56] = "hda"
+INFO    | 	 argv[57] = "-vga"
+INFO    | 	 argv[58] = "none"
+INFO    | 	 argv[59] = "-append"
+INFO    | 	 argv[60] = "no_timer_check 8250.nr_uarts=1 clocksource=pit console=0 cma=292M@0-4G mac80211_hwsim.channels=2 loop.max_part=7 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 printk.devkmsg=on qemu=1 androidboot.hardware=ranchu androidboot.serialno=EMULATOR33X1X23X0 android.bootanim=0 qemu.gles=1 qemu.settings.system.screen_off_timeout=2147483647 qemu.encrypt=1 qemu.vsync=60 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=196608 qemu.uirenderer=skiagl qemu.dalvik.vm.heapsize=576m qemu.camera_protocol_ver=1 qemu.camera_hq_edge_processing=0 androidboot.vbmeta.size=6144 androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.digest=b9f67e285b7a2b098478e493628534ac78b3ac3015c3cb204fe8f7d6a51021bb androidboot.boot_devices=pci0000:00/0000:00:03.0 qemu.wifi=1 qemu.hwcodec.avcdec=2 qemu.hwcodec.hevcdec=2 qemu.hwcodec.vpxdec=2 android.qemud=1 qemu.avd_name=device_1"
+INFO    | 	 argv[61] = "-android-hw"
+INFO    | 	 argv[62] = "/root/.android/avd/../avd/device_1.avd/hardware-qemu.ini"
+INFO    | Concatenated QEMU options: /home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless -dns-server 127.0.0.53 -no-audio -mem-path /root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img -serial null -android-ports 5554,5555 -device goldfish_pstore,addr=0xff018000,size=0x10000,file=/root/.android/avd/../avd/device_1.avd/data/misc/pstore/pstore.bin -cpu android64-xts -enable-kvm -m 4096 -lcd-density 440 -object iothread,id=disk-iothread -nodefaults -kernel /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu -initrd /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img -drive if=none,index=0,id=system,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img,read-only -device virtio-blk-pci,drive=system,iothread=disk-iothread,modern-pio-notify -drive if=none,index=1,id=cache,if=none,file=/root/.android/avd/../avd/device_1.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=cache,iothread=disk-iothread,modern-pio-notify -drive if=none,index=2,id=userdata,if=none,file=/root/.android/avd/../avd/device_1.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=userdata,iothread=disk-iothread,modern-pio-notify -drive if=none,index=3,id=encrypt,if=none,file=/root/.android/avd/../avd/device_1.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=encrypt,iothread=disk-iothread,modern-pio-notify -drive if=none,index=4,id=vendor,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img,read-only -device virtio-blk-pci,drive=vendor,iothread=disk-iothread,modern-pio-notify -netdev user,id=mynet -device virtio-net-pci,netdev=mynet -device virtio-rng-pci 
+DEBUG   | Android qemu version 33.1.23.0 (build_id 11150993) (CL:N/A)
+DEBUG   | Starting QEMU main loop
+DEBUG   | Adding boot property: 'ro.opengles.version' = '196608'
+DEBUG   | Adding boot property: 'qemu.sf.fake_camera' = 'none'
+DEBUG   | Adding boot property: 'qemu.adb.secure' = '1'
+DEBUG   | Adding boot property: 'dalvik.vm.heapsize' = '576m'
+DEBUG   | Adding boot property: 'qemu.hw.mainkeys' = '0'
+DEBUG   | Adding boot property: 'qemu.sf.lcd_density' = '440'
+DEBUG   | goldfish_events.have-dpad: false
+DEBUG   | goldfish_events.have-trackball: false
+DEBUG   | goldfish_events.have-camera: false
+DEBUG   | goldfish_events.have-keyboard: false
+DEBUG   | goldfish_events.have-lidswitch: true
+DEBUG   | goldfish_events.have-tabletmode: false
+DEBUG   | goldfish_events.have-touch: false
+DEBUG   | goldfish_events.have-multitouch: false
+DEBUG   | Adding boot property: 'net.wifi_mac_prefix' = '5554'
+pc_memory_init: above 4g size: 40000000
+DEBUG   | Not using any http proxy
+DEBUG   | Adding boot property: 'qemu.timezone' = 'Etc/UTC'
+DEBUG   | android_hw_fingerprint_init: fingerprint qemud listen service initialized
+DEBUG   | emulator_window_fb_rotate
+I1214 07:28:08.128359 3917004 FrameBuffer.cpp:3682] setDisplayConfigs w 1080 h 2160 dpiX 440 dpiY 440
+DEBUG   | setDisplayPose 0 x 0 y 0 w 1080 h 2160 dpi 0
+I1214 07:28:08.128396 3917004 FrameBuffer.cpp:3695] setDisplayActiveConfig 0
+DEBUG   | config multidisplay with config.ini 0x0 0x0 0x0
+DEBUG   | No acpi ini file provided, using default
+INFO    | Cold boot: requested by the user
+WARNING | Cold boot:  requested by the user
+DEBUG   | No acpi ini file provided, using default
+DEBUG   | _hwFingerprint_connect: connect finger print listen is called
+DEBUG   | got message from guest system fingerprint HAL
+DEBUG   | onGuestSendCommand: [0x561fb73cac30] Adb connected, start proxing data
+INFO    | Boot completed in 69090 ms
+INFO    | Increasing screen off timeout, logcat buffer size to 2M.
+DEBUG   | applying overlayName pixel_3
+E1214 07:29:18.102641 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.102715 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.102725 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.102733 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.102741 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.102749 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.102757 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.102765 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.102783 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:22
+E1214 07:29:18.102792 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.102800 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.102808 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.102839 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.102847 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.102855 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.102863 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.102870 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.102878 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.102886 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.102894 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.102901 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.102909 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.102917 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.102924 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.102932 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.102940 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.102947 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.102955 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.102963 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.102970 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.102978 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.102986 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.102993 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103001 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103009 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103016 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103024 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103044 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103052 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103059 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103067 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103075 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103082 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103090 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103098 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103105 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103113 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103121 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103128 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103136 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103143 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103151 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103158 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103166 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103174 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103181 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103189 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103196 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103204 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103212 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103219 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103227 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103234 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103242 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103249 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103257 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103264 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103272 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103279 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103287 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103294 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103302 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103310 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103317 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103325 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103333 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103340 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103348 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103355 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103363 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103371 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103378 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103386 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103393 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103401 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103408 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103416 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103427 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103435 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103442 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103450 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103458 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103465 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103473 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103480 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103488 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103495 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103503 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103510 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103518 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103525 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103533 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103541 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103548 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103556 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103564 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103571 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103579 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103586 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103594 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103602 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103609 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103617 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103624 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103632 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103639 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103652 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 07:29:18.103660 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:20
+E1214 07:29:18.103667 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 07:29:18.103701 3917193 FrameBuffer.cpp:3765] Failed to find ColorBuffer:34
+DEBUG   | Timed out with running command 
+DEBUG   | Timed out with running command 
+DEBUG   | Registering pipe service multidisplay
+DEBUG   | MultiDisplayPipe created 0x561fb93b1260
+DEBUG   | MultiDisplayPipe recevied QUERY
+DEBUG   | MultiDisplayPipe send add id 0 width 1080 height 2160 dpi 0 flag 0
+DEBUG   | Timed out with running command 
+DEBUG   | Timed out with running command 
+DEBUG   | onGuestClose: [0x561fba9f8000] Adb closed by guest
+DEBUG   | onGuestClose: [0x561fb73cac30] Adb closed by guest
+DEBUG   | onGuestSendCommand: [0x561fb73cac30] Adb connected, start proxing data
+ERROR   | detected a hanging thread 'QEMU2 CPU0 thread'. No response for 15401 ms
+ERROR   | detected a hanging thread 'QEMU2 main loop'. No response for 16653 ms
+ERROR   | detected a hanging thread 'QEMU2 CPU0 thread'. No response for 15409 ms
+ERROR   | detected a hanging thread 'QEMU2 main loop'. No response for 18307 ms
+ERROR   | detected a hanging thread 'QEMU2 main loop'. No response for 16056 ms
+INFO    | Android emulator version 33.1.23.0 (build_id 11150993) (CL:N/A)
+DEBUG   | Current emulator version 33.1.23 is the same as the required version 33.1.23.
+INFO    | Found systemPath /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64/
+WARNING | Please update the emulator to one that supports the feature(s): Vulkan
+WARNING | FeatureControl is requesting a non existing feature.
+WARNING | Your GPU drivers may have a bug. Switching to software rendering.
+I1214 08:02:51.428754 3935664 HealthMonitor.cpp:279] HealthMonitor disabled.
+I1214 08:02:51.506136 3935664 FrameBuffer.cpp:486] Graphics Adapter Vendor Google (Google Inc.)
+I1214 08:02:51.506182 3935664 FrameBuffer.cpp:487] Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+I1214 08:02:51.506191 3935664 FrameBuffer.cpp:488] Graphics API Version OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)
+I1214 08:02:51.506198 3935664 FrameBuffer.cpp:489] Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+I1214 08:02:51.506205 3935664 FrameBuffer.cpp:490] Graphics Device Extensions N/A
+INFO    | Storing crashdata in: , detection is enabled for process: 3935664
+INFO    | Duplicate loglines will be removed, if you wish to see each individual line launch with the -log-nofilter flag.
+DEBUG   | autoconfig: -skin 1080x2160
+DEBUG   | autoconfig: -skindir (null)
+DEBUG   | autoconfig: -kernel /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu
+DEBUG   | Target arch = 'x86_64'
+DEBUG   | Auto-detect: Kernel image requires new device naming scheme.
+DEBUG   | Auto-detect: Kernel does not support YAFFS2 partitions.
+DEBUG   | autoconfig: -ramdisk /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img
+DEBUG   | Using initial system image: /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img
+DEBUG   | Using initial vendor image: /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img
+DEBUG   | autoconfig: -initdata /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//userdata.img
+DEBUG   | autoconfig: -cache /root/.android/avd/../avd/device_1.avd/cache.img
+DEBUG   | Physical RAM size: 4096MB
+DEBUG   | VM heap size 0MB is below hardware specified minimum of 576MB,setting it to that value
+DEBUG   | System image is read only
+DEBUG   | Found 1 DNS servers:
+DEBUG   | 	127.0.0.53
+DEBUG   | found magic skin width=1080 height=2160 bpp=16
+DEBUG   | File System is ext4, do not disable QuickbootFileBacked feature
+DEBUG   | statvfs('/root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img') failed: No such file or directory
+DEBUG   | Requested console port 5554: Inferring adb port 5555.
+DEBUG   | Creating ext4 userdata partition: /root/.android/avd/../avd/device_1.avd/data
+DEBUG   | path_copy_file: source file is un-readable: /root/.android/adbkey.pub
+DEBUG   | Fall back to adbkey /root/.android/adbkey successfully
+Creating filesystem with parameters:
+    Size: 6442450944
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 8192
+    Inode size: 256
+    Journal blocks: 24576
+    Label: 
+    Blocks: 1572864
+    Block groups: 48
+    Reserved block group size: 383
+Created filesystem with 27/393216 inodes and 52348/1572864 blocks
+DEBUG   | Creating empty ext4 cache partition: /root/.android/avd/../avd/device_1.avd/cache.img
+Creating filesystem with parameters:
+    Size: 69206016
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 4224
+    Inode size: 256
+    Journal blocks: 1024
+    Label: 
+    Blocks: 16896
+    Block groups: 1
+    Reserved block group size: 7
+Created filesystem with 11/4224 inodes and 1302/16896 blocks
+DEBUG   | CPU Acceleration: working
+DEBUG   | CPU Acceleration status: KVM (version 12) is installed and usable.
+DEBUG   | handleCpuAcceleration: feature check for hvf
+DEBUG   | registered 'boot-properties' qemud service
+DEBUG   | Adding boot property: 'qemu.cmdline' = 'androidboot.logcat=*:V androidboot.consolepipe=qemu_pipe,pipe:logcat'
+DEBUG   | Adding boot property: 'qemu.logcat' = 'start'
+DEBUG   |  no root specified: 
+DEBUG   | Path:/home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb protocol version: 41
+DEBUG   | Found: 1 adb executables
+DEBUG   | Adb: /home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb
+DEBUG   | Path:/home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb protocol version: 41
+INFO    | No consent for crashreport c18e4b0f-384d-4683-9ce6-81e4765fb841, deleting.
+library_mode swangle_indirect gpu mode swangle_indirect
+DEBUG   | GPU emulation enabled using 'swangle_indirect' mode
+DEBUG   | Initializing hardware OpenGLES emulation support
+DEBUG   | create display 0
+DEBUG   | setDisplayPose 0 x 0 y 0 w 1080 h 2160 dpi 0
+INFO    | Setting vsync to 60 hz
+DEBUG   | Found 1 DNS servers:
+DEBUG   | 	127.0.0.53
+INFO    | Content of hardware configuration file:
+INFO    | 	hw.cpu.arch = x86_64
+INFO    | 	hw.cpu.ncore = 1
+INFO    | 	hw.ramSize = 4096
+INFO    | 	hw.screen = no-touch
+INFO    | 	hw.mainKeys = false
+INFO    | 	hw.trackBall = false
+INFO    | 	hw.keyboard = false
+INFO    | 	hw.keyboard.lid = true
+INFO    | 	hw.keyboard.charmap = qwerty2
+INFO    | 	hw.dPad = false
+INFO    | 	hw.rotaryInput = false
+INFO    | 	hw.gsmModem = true
+INFO    | 	hw.gps = true
+INFO    | 	hw.battery = true
+INFO    | 	hw.accelerometer = true
+INFO    | 	hw.accelerometer_uncalibrated = true
+INFO    | 	hw.gyroscope = true
+INFO    | 	hw.audioInput = true
+INFO    | 	hw.audioOutput = true
+INFO    | 	hw.sdCard = true
+INFO    | 	disk.cachePartition = true
+INFO    | 	disk.cachePartition.path = /root/.android/avd/../avd/device_1.avd/cache.img
+INFO    | 	disk.cachePartition.size = 66m
+INFO    | 	test.quitAfterBootTimeOut = -1
+INFO    | 	test.delayAdbTillBootComplete = 0
+INFO    | 	test.monitorAdb = 0
+INFO    | 	hw.lcd.width = 1080
+INFO    | 	hw.lcd.height = 2160
+INFO    | 	hw.lcd.depth = 16
+INFO    | 	hw.lcd.circular = false
+INFO    | 	hw.lcd.density = 440
+INFO    | 	hw.lcd.backlight = true
+INFO    | 	hw.lcd.vsync = 60
+INFO    | 	hw.gltransport = pipe
+INFO    | 	hw.gltransport.asg.writeBufferSize = 1048576
+INFO    | 	hw.gltransport.asg.writeStepSize = 4096
+INFO    | 	hw.gltransport.asg.dataRingSize = 32768
+INFO    | 	hw.gltransport.drawFlushInterval = 800
+INFO    | 	hw.displayRegion.0.1.xOffset = -1
+INFO    | 	hw.displayRegion.0.1.yOffset = -1
+INFO    | 	hw.displayRegion.0.1.width = 0
+INFO    | 	hw.displayRegion.0.1.height = 0
+INFO    | 	hw.displayRegion.0.2.xOffset = -1
+INFO    | 	hw.displayRegion.0.2.yOffset = -1
+INFO    | 	hw.displayRegion.0.2.width = 0
+INFO    | 	hw.displayRegion.0.2.height = 0
+INFO    | 	hw.displayRegion.0.3.xOffset = -1
+INFO    | 	hw.displayRegion.0.3.yOffset = -1
+INFO    | 	hw.displayRegion.0.3.width = 0
+INFO    | 	hw.displayRegion.0.3.height = 0
+INFO    | 	hw.display1.width = 0
+INFO    | 	hw.display1.height = 0
+INFO    | 	hw.display1.density = 0
+INFO    | 	hw.display1.xOffset = -1
+INFO    | 	hw.display1.yOffset = -1
+INFO    | 	hw.display1.flag = 0
+INFO    | 	hw.display2.width = 0
+INFO    | 	hw.display2.height = 0
+INFO    | 	hw.display2.density = 0
+INFO    | 	hw.display2.xOffset = -1
+INFO    | 	hw.display2.yOffset = -1
+INFO    | 	hw.display2.flag = 0
+INFO    | 	hw.display3.width = 0
+INFO    | 	hw.display3.height = 0
+INFO    | 	hw.display3.density = 0
+INFO    | 	hw.display3.xOffset = -1
+INFO    | 	hw.display3.yOffset = -1
+INFO    | 	hw.display3.flag = 0
+INFO    | 	hw.multi_display_window = false
+INFO    | 	hw.hotplug_multi_display = false
+INFO    | 	hw.gpu.enabled = true
+INFO    | 	hw.gpu.mode = swangle_indirect
+INFO    | 	hw.initialOrientation = portrait
+INFO    | 	hw.camera.back = none
+INFO    | 	hw.camera.front = none
+INFO    | 	vm.heapSize = 576
+INFO    | 	hw.sensors.light = true
+INFO    | 	hw.sensors.pressure = true
+INFO    | 	hw.sensors.humidity = true
+INFO    | 	hw.sensors.proximity = true
+INFO    | 	hw.sensors.magnetic_field = true
+INFO    | 	hw.sensors.magnetic_field_uncalibrated = true
+INFO    | 	hw.sensors.gyroscope_uncalibrated = true
+INFO    | 	hw.sensors.orientation = true
+INFO    | 	hw.sensors.temperature = true
+INFO    | 	hw.sensors.rgbclight = false
+INFO    | 	hw.sensor.hinge = false
+INFO    | 	hw.sensor.hinge.count = 0
+INFO    | 	hw.sensor.hinge.type = 0
+INFO    | 	hw.sensor.hinge.sub_type = 0
+INFO    | 	hw.sensor.hinge.resizable.config = 1
+INFO    | 	hw.sensor.hinge.fold_to_displayRegion.0.1_at_posture = 1
+INFO    | 	hw.sensor.roll = false
+INFO    | 	hw.sensor.roll.count = 0
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.1_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.2_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.3_at_posture = 6
+INFO    | 	hw.sensors.heart_rate = false
+INFO    | 	hw.sensors.wrist_tilt = false
+INFO    | 	hw.useext4 = true
+INFO    | 	hw.arc = false
+INFO    | 	hw.arc.autologin = false
+INFO    | 	hw.device.name = pixel_3
+INFO    | 	kernel.path = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu
+INFO    | 	kernel.newDeviceNaming = yes
+INFO    | 	kernel.supportsYaffs2 = no
+INFO    | 	disk.ramdisk.path = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img
+INFO    | 	disk.systemPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img
+INFO    | 	disk.systemPartition.size = 3083m
+INFO    | 	disk.vendorPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img
+INFO    | 	disk.vendorPartition.size = 800m
+INFO    | 	disk.dataPartition.path = /root/.android/avd/../avd/device_1.avd/userdata-qemu.img
+INFO    | 	disk.dataPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//userdata.img
+INFO    | 	disk.dataPartition.size = 6g
+INFO    | 	disk.encryptionKeyPartition.path = /root/.android/avd/../avd/device_1.avd/encryptionkey.img
+INFO    | 	PlayStore.enabled = false
+INFO    | 	avd.name = device_1
+INFO    | 	avd.id = device_1
+INFO    | 	fastboot.forceColdBoot = false
+INFO    | 	userdata.useQcow2 = false
+INFO    | 	firstboot.bootFromDownloadableSnapshot = true
+INFO    | 	firstboot.bootFromLocalSnapshot = true
+INFO    | 	firstboot.saveToLocalSnapshot = true
+INFO    | 	android.sdk.root = /home/wtz/courses/web-security/DiffCSP/mobile-setting
+INFO    | 	android.avd.home = /root/.android/avd
+INFO    | .
+INFO    | QEMU options list:
+INFO    | 	 argv[00] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless"
+INFO    | 	 argv[01] = "-dns-server"
+INFO    | 	 argv[02] = "127.0.0.53"
+INFO    | 	 argv[03] = "-no-audio"
+INFO    | 	 argv[04] = "-mem-path"
+INFO    | 	 argv[05] = "/root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img"
+INFO    | 	 argv[06] = "-serial"
+INFO    | 	 argv[07] = "null"
+INFO    | 	 argv[08] = "-android-ports"
+INFO    | 	 argv[09] = "5554,5555"
+INFO    | 	 argv[10] = "-device"
+INFO    | 	 argv[11] = "goldfish_pstore,addr=0xff018000,size=0x10000,file=/root/.android/avd/../avd/device_1.avd/data/misc/pstore/pstore.bin"
+INFO    | 	 argv[12] = "-cpu"
+INFO    | 	 argv[13] = "android64-xts"
+INFO    | 	 argv[14] = "-enable-kvm"
+INFO    | 	 argv[15] = "-m"
+INFO    | 	 argv[16] = "4096"
+INFO    | 	 argv[17] = "-lcd-density"
+INFO    | 	 argv[18] = "440"
+INFO    | 	 argv[19] = "-object"
+INFO    | 	 argv[20] = "iothread,id=disk-iothread"
+INFO    | 	 argv[21] = "-nodefaults"
+INFO    | 	 argv[22] = "-kernel"
+INFO    | 	 argv[23] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu"
+INFO    | 	 argv[24] = "-initrd"
+INFO    | 	 argv[25] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img"
+INFO    | 	 argv[26] = "-drive"
+INFO    | 	 argv[27] = "if=none,index=0,id=system,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img,read-only"
+INFO    | 	 argv[28] = "-device"
+INFO    | 	 argv[29] = "virtio-blk-pci,drive=system,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[30] = "-drive"
+INFO    | 	 argv[31] = "if=none,index=1,id=cache,if=none,file=/root/.android/avd/../avd/device_1.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[32] = "-device"
+INFO    | 	 argv[33] = "virtio-blk-pci,drive=cache,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[34] = "-drive"
+INFO    | 	 argv[35] = "if=none,index=2,id=userdata,if=none,file=/root/.android/avd/../avd/device_1.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[36] = "-device"
+INFO    | 	 argv[37] = "virtio-blk-pci,drive=userdata,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[38] = "-drive"
+INFO    | 	 argv[39] = "if=none,index=3,id=encrypt,if=none,file=/root/.android/avd/../avd/device_1.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[40] = "-device"
+INFO    | 	 argv[41] = "virtio-blk-pci,drive=encrypt,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[42] = "-drive"
+INFO    | 	 argv[43] = "if=none,index=4,id=vendor,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img,read-only"
+INFO    | 	 argv[44] = "-device"
+INFO    | 	 argv[45] = "virtio-blk-pci,drive=vendor,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[46] = "-netdev"
+INFO    | 	 argv[47] = "user,id=mynet"
+INFO    | 	 argv[48] = "-device"
+INFO    | 	 argv[49] = "virtio-net-pci,netdev=mynet"
+INFO    | 	 argv[50] = "-device"
+INFO    | 	 argv[51] = "virtio-rng-pci"
+INFO    | 	 argv[52] = "-show-cursor"
+INFO    | 	 argv[53] = "-L"
+INFO    | 	 argv[54] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/lib/pc-bios"
+INFO    | 	 argv[55] = "-soundhw"
+INFO    | 	 argv[56] = "hda"
+INFO    | 	 argv[57] = "-vga"
+INFO    | 	 argv[58] = "none"
+INFO    | 	 argv[59] = "-append"
+INFO    | 	 argv[60] = "no_timer_check 8250.nr_uarts=1 clocksource=pit console=0 cma=292M@0-4G mac80211_hwsim.channels=2 loop.max_part=7 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 printk.devkmsg=on qemu=1 androidboot.hardware=ranchu androidboot.serialno=EMULATOR33X1X23X0 android.bootanim=0 qemu.gles=1 qemu.settings.system.screen_off_timeout=2147483647 qemu.encrypt=1 qemu.vsync=60 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=196608 qemu.uirenderer=skiagl qemu.dalvik.vm.heapsize=576m qemu.camera_protocol_ver=1 qemu.camera_hq_edge_processing=0 androidboot.vbmeta.size=6144 androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.digest=b9f67e285b7a2b098478e493628534ac78b3ac3015c3cb204fe8f7d6a51021bb androidboot.boot_devices=pci0000:00/0000:00:03.0 qemu.wifi=1 qemu.hwcodec.avcdec=2 qemu.hwcodec.hevcdec=2 qemu.hwcodec.vpxdec=2 android.qemud=1 qemu.avd_name=device_1"
+INFO    | 	 argv[61] = "-android-hw"
+INFO    | 	 argv[62] = "/root/.android/avd/../avd/device_1.avd/hardware-qemu.ini"
+INFO    | Concatenated QEMU options: /home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless -dns-server 127.0.0.53 -no-audio -mem-path /root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img -serial null -android-ports 5554,5555 -device goldfish_pstore,addr=0xff018000,size=0x10000,file=/root/.android/avd/../avd/device_1.avd/data/misc/pstore/pstore.bin -cpu android64-xts -enable-kvm -m 4096 -lcd-density 440 -object iothread,id=disk-iothread -nodefaults -kernel /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu -initrd /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img -drive if=none,index=0,id=system,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img,read-only -device virtio-blk-pci,drive=system,iothread=disk-iothread,modern-pio-notify -drive if=none,index=1,id=cache,if=none,file=/root/.android/avd/../avd/device_1.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=cache,iothread=disk-iothread,modern-pio-notify -drive if=none,index=2,id=userdata,if=none,file=/root/.android/avd/../avd/device_1.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=userdata,iothread=disk-iothread,modern-pio-notify -drive if=none,index=3,id=encrypt,if=none,file=/root/.android/avd/../avd/device_1.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=encrypt,iothread=disk-iothread,modern-pio-notify -drive if=none,index=4,id=vendor,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img,read-only -device virtio-blk-pci,drive=vendor,iothread=disk-iothread,modern-pio-notify -netdev user,id=mynet -device virtio-net-pci,netdev=mynet -device virtio-rng-pci 
+DEBUG   | Android qemu version 33.1.23.0 (build_id 11150993) (CL:N/A)
+DEBUG   | Starting QEMU main loop
+DEBUG   | Adding boot property: 'ro.opengles.version' = '196608'
+DEBUG   | Adding boot property: 'qemu.sf.fake_camera' = 'none'
+DEBUG   | Adding boot property: 'qemu.adb.secure' = '1'
+DEBUG   | Adding boot property: 'dalvik.vm.heapsize' = '576m'
+DEBUG   | Adding boot property: 'qemu.hw.mainkeys' = '0'
+DEBUG   | Adding boot property: 'qemu.sf.lcd_density' = '440'
+DEBUG   | goldfish_events.have-dpad: false
+DEBUG   | goldfish_events.have-trackball: false
+DEBUG   | goldfish_events.have-camera: false
+DEBUG   | goldfish_events.have-keyboard: false
+DEBUG   | goldfish_events.have-lidswitch: true
+DEBUG   | goldfish_events.have-tabletmode: false
+DEBUG   | goldfish_events.have-touch: false
+DEBUG   | goldfish_events.have-multitouch: false
+DEBUG   | Adding boot property: 'net.wifi_mac_prefix' = '5554'
+pc_memory_init: above 4g size: 40000000
+DEBUG   | Not using any http proxy
+DEBUG   | Adding boot property: 'qemu.timezone' = 'Etc/UTC'
+DEBUG   | android_hw_fingerprint_init: fingerprint qemud listen service initialized
+DEBUG   | emulator_window_fb_rotate
+I1214 08:02:51.698916 3935713 FrameBuffer.cpp:3682] setDisplayConfigs w 1080 h 2160 dpiX 440 dpiY 440
+DEBUG   | setDisplayPose 0 x 0 y 0 w 1080 h 2160 dpi 0
+I1214 08:02:51.698955 3935713 FrameBuffer.cpp:3695] setDisplayActiveConfig 0
+DEBUG   | config multidisplay with config.ini 0x0 0x0 0x0
+DEBUG   | No acpi ini file provided, using default
+INFO    | Cold boot: requested by the user
+WARNING | Cold boot:  requested by the user
+DEBUG   | No acpi ini file provided, using default
+INFO    | Wait for emulator (pid 3935664) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+WARNING | Not saving state: RAM not mapped as shared
+ERROR   | stop: Not implemented
+DEBUG   | Done with QEMU main loop
+DEBUG   | User configuration saved to /root/.android/avd/../avd/device_1.avd/emulator-user.ini
+XIO:  fatal IO error 17 (File exists) on X server ":99"
+      after 8 requests (8 known processed) with 0 events remaining.
+INFO    | Android emulator version 33.1.23.0 (build_id 11150993) (CL:N/A)
+DEBUG   | Current emulator version 33.1.23 is the same as the required version 33.1.23.
+INFO    | Found systemPath /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64/
+WARNING | Please update the emulator to one that supports the feature(s): Vulkan
+WARNING | FeatureControl is requesting a non existing feature.
+WARNING | Your GPU drivers may have a bug. Switching to software rendering.
+I1214 08:04:32.929772 3936565 HealthMonitor.cpp:279] HealthMonitor disabled.
+I1214 08:04:32.939359 3936565 FrameBuffer.cpp:486] Graphics Adapter Vendor Google (Google Inc.)
+I1214 08:04:32.939394 3936565 FrameBuffer.cpp:487] Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+I1214 08:04:32.939399 3936565 FrameBuffer.cpp:488] Graphics API Version OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)
+I1214 08:04:32.939404 3936565 FrameBuffer.cpp:489] Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+I1214 08:04:32.939409 3936565 FrameBuffer.cpp:490] Graphics Device Extensions N/A
+INFO    | Storing crashdata in: , detection is enabled for process: 3936565
+INFO    | Duplicate loglines will be removed, if you wish to see each individual line launch with the -log-nofilter flag.
+DEBUG   | autoconfig: -skin 1080x2160
+DEBUG   | autoconfig: -skindir (null)
+DEBUG   | autoconfig: -kernel /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu
+DEBUG   | Target arch = 'x86_64'
+DEBUG   | Auto-detect: Kernel image requires new device naming scheme.
+DEBUG   | Auto-detect: Kernel does not support YAFFS2 partitions.
+DEBUG   | autoconfig: -ramdisk /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img
+DEBUG   | Using initial system image: /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img
+DEBUG   | Using initial vendor image: /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img
+DEBUG   | autoconfig: -initdata /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//userdata.img
+DEBUG   | autoconfig: -cache /root/.android/avd/../avd/device_1.avd/cache.img
+DEBUG   | Physical RAM size: 4096MB
+DEBUG   | VM heap size 0MB is below hardware specified minimum of 576MB,setting it to that value
+DEBUG   | System image is read only
+DEBUG   | Found 1 DNS servers:
+DEBUG   | 	127.0.0.53
+DEBUG   | found magic skin width=1080 height=2160 bpp=16
+DEBUG   | File System is ext4, do not disable QuickbootFileBacked feature
+DEBUG   | statvfs('/root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img') failed: No such file or directory
+DEBUG   | Requested console port 5554: Inferring adb port 5555.
+DEBUG   | Creating ext4 userdata partition: /root/.android/avd/../avd/device_1.avd/data
+DEBUG   | path_copy_file: source file is un-readable: /root/.android/adbkey.pub
+DEBUG   | Fall back to adbkey /root/.android/adbkey successfully
+Creating filesystem with parameters:
+    Size: 6442450944
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 8192
+    Inode size: 256
+    Journal blocks: 24576
+    Label: 
+    Blocks: 1572864
+    Block groups: 48
+    Reserved block group size: 383
+Created filesystem with 27/393216 inodes and 52348/1572864 blocks
+DEBUG   | Creating empty ext4 cache partition: /root/.android/avd/../avd/device_1.avd/cache.img
+Creating filesystem with parameters:
+    Size: 69206016
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 4224
+    Inode size: 256
+    Journal blocks: 1024
+    Label: 
+    Blocks: 16896
+    Block groups: 1
+    Reserved block group size: 7
+Created filesystem with 11/4224 inodes and 1302/16896 blocks
+DEBUG   | CPU Acceleration: working
+DEBUG   | CPU Acceleration status: KVM (version 12) is installed and usable.
+DEBUG   | handleCpuAcceleration: feature check for hvf
+DEBUG   | registered 'boot-properties' qemud service
+DEBUG   | Adding boot property: 'qemu.cmdline' = 'androidboot.logcat=*:V androidboot.consolepipe=qemu_pipe,pipe:logcat'
+DEBUG   | Adding boot property: 'qemu.logcat' = 'start'
+DEBUG   |  no root specified: 
+DEBUG   | Path:/home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb protocol version: 41
+DEBUG   | Found: 1 adb executables
+DEBUG   | Adb: /home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb
+DEBUG   | Path:/home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb protocol version: 41
+INFO    | No consent for crashreport c18e4b0f-384d-4683-9ce6-81e4765fb841, deleting.
+library_mode swangle_indirect gpu mode swangle_indirect
+DEBUG   | GPU emulation enabled using 'swangle_indirect' mode
+DEBUG   | Initializing hardware OpenGLES emulation support
+DEBUG   | create display 0
+DEBUG   | setDisplayPose 0 x 0 y 0 w 1080 h 2160 dpi 0
+INFO    | Setting vsync to 60 hz
+DEBUG   | Found 1 DNS servers:
+DEBUG   | 	127.0.0.53
+INFO    | Content of hardware configuration file:
+INFO    | 	hw.cpu.arch = x86_64
+INFO    | 	hw.cpu.ncore = 1
+INFO    | 	hw.ramSize = 4096
+INFO    | 	hw.screen = no-touch
+INFO    | 	hw.mainKeys = false
+INFO    | 	hw.trackBall = false
+INFO    | 	hw.keyboard = false
+INFO    | 	hw.keyboard.lid = true
+INFO    | 	hw.keyboard.charmap = qwerty2
+INFO    | 	hw.dPad = false
+INFO    | 	hw.rotaryInput = false
+INFO    | 	hw.gsmModem = true
+INFO    | 	hw.gps = true
+INFO    | 	hw.battery = true
+INFO    | 	hw.accelerometer = true
+INFO    | 	hw.accelerometer_uncalibrated = true
+INFO    | 	hw.gyroscope = true
+INFO    | 	hw.audioInput = true
+INFO    | 	hw.audioOutput = true
+INFO    | 	hw.sdCard = true
+INFO    | 	disk.cachePartition = true
+INFO    | 	disk.cachePartition.path = /root/.android/avd/../avd/device_1.avd/cache.img
+INFO    | 	disk.cachePartition.size = 66m
+INFO    | 	test.quitAfterBootTimeOut = -1
+INFO    | 	test.delayAdbTillBootComplete = 0
+INFO    | 	test.monitorAdb = 0
+INFO    | 	hw.lcd.width = 1080
+INFO    | 	hw.lcd.height = 2160
+INFO    | 	hw.lcd.depth = 16
+INFO    | 	hw.lcd.circular = false
+INFO    | 	hw.lcd.density = 440
+INFO    | 	hw.lcd.backlight = true
+INFO    | 	hw.lcd.vsync = 60
+INFO    | 	hw.gltransport = pipe
+INFO    | 	hw.gltransport.asg.writeBufferSize = 1048576
+INFO    | 	hw.gltransport.asg.writeStepSize = 4096
+INFO    | 	hw.gltransport.asg.dataRingSize = 32768
+INFO    | 	hw.gltransport.drawFlushInterval = 800
+INFO    | 	hw.displayRegion.0.1.xOffset = -1
+INFO    | 	hw.displayRegion.0.1.yOffset = -1
+INFO    | 	hw.displayRegion.0.1.width = 0
+INFO    | 	hw.displayRegion.0.1.height = 0
+INFO    | 	hw.displayRegion.0.2.xOffset = -1
+INFO    | 	hw.displayRegion.0.2.yOffset = -1
+INFO    | 	hw.displayRegion.0.2.width = 0
+INFO    | 	hw.displayRegion.0.2.height = 0
+INFO    | 	hw.displayRegion.0.3.xOffset = -1
+INFO    | 	hw.displayRegion.0.3.yOffset = -1
+INFO    | 	hw.displayRegion.0.3.width = 0
+INFO    | 	hw.displayRegion.0.3.height = 0
+INFO    | 	hw.display1.width = 0
+INFO    | 	hw.display1.height = 0
+INFO    | 	hw.display1.density = 0
+INFO    | 	hw.display1.xOffset = -1
+INFO    | 	hw.display1.yOffset = -1
+INFO    | 	hw.display1.flag = 0
+INFO    | 	hw.display2.width = 0
+INFO    | 	hw.display2.height = 0
+INFO    | 	hw.display2.density = 0
+INFO    | 	hw.display2.xOffset = -1
+INFO    | 	hw.display2.yOffset = -1
+INFO    | 	hw.display2.flag = 0
+INFO    | 	hw.display3.width = 0
+INFO    | 	hw.display3.height = 0
+INFO    | 	hw.display3.density = 0
+INFO    | 	hw.display3.xOffset = -1
+INFO    | 	hw.display3.yOffset = -1
+INFO    | 	hw.display3.flag = 0
+INFO    | 	hw.multi_display_window = false
+INFO    | 	hw.hotplug_multi_display = false
+INFO    | 	hw.gpu.enabled = true
+INFO    | 	hw.gpu.mode = swangle_indirect
+INFO    | 	hw.initialOrientation = portrait
+INFO    | 	hw.camera.back = none
+INFO    | 	hw.camera.front = none
+INFO    | 	vm.heapSize = 576
+INFO    | 	hw.sensors.light = true
+INFO    | 	hw.sensors.pressure = true
+INFO    | 	hw.sensors.humidity = true
+INFO    | 	hw.sensors.proximity = true
+INFO    | 	hw.sensors.magnetic_field = true
+INFO    | 	hw.sensors.magnetic_field_uncalibrated = true
+INFO    | 	hw.sensors.gyroscope_uncalibrated = true
+INFO    | 	hw.sensors.orientation = true
+INFO    | 	hw.sensors.temperature = true
+INFO    | 	hw.sensors.rgbclight = false
+INFO    | 	hw.sensor.hinge = false
+INFO    | 	hw.sensor.hinge.count = 0
+INFO    | 	hw.sensor.hinge.type = 0
+INFO    | 	hw.sensor.hinge.sub_type = 0
+INFO    | 	hw.sensor.hinge.resizable.config = 1
+INFO    | 	hw.sensor.hinge.fold_to_displayRegion.0.1_at_posture = 1
+INFO    | 	hw.sensor.roll = false
+INFO    | 	hw.sensor.roll.count = 0
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.1_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.2_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.3_at_posture = 6
+INFO    | 	hw.sensors.heart_rate = false
+INFO    | 	hw.sensors.wrist_tilt = false
+INFO    | 	hw.useext4 = true
+INFO    | 	hw.arc = false
+INFO    | 	hw.arc.autologin = false
+INFO    | 	hw.device.name = pixel_3
+INFO    | 	kernel.path = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu
+INFO    | 	kernel.newDeviceNaming = yes
+INFO    | 	kernel.supportsYaffs2 = no
+INFO    | 	disk.ramdisk.path = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img
+INFO    | 	disk.systemPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img
+INFO    | 	disk.systemPartition.size = 3083m
+INFO    | 	disk.vendorPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img
+INFO    | 	disk.vendorPartition.size = 800m
+INFO    | 	disk.dataPartition.path = /root/.android/avd/../avd/device_1.avd/userdata-qemu.img
+INFO    | 	disk.dataPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//userdata.img
+INFO    | 	disk.dataPartition.size = 6g
+INFO    | 	disk.encryptionKeyPartition.path = /root/.android/avd/../avd/device_1.avd/encryptionkey.img
+INFO    | 	PlayStore.enabled = false
+INFO    | 	avd.name = device_1
+INFO    | 	avd.id = device_1
+INFO    | 	fastboot.forceColdBoot = false
+INFO    | 	userdata.useQcow2 = false
+INFO    | 	firstboot.bootFromDownloadableSnapshot = true
+INFO    | 	firstboot.bootFromLocalSnapshot = true
+INFO    | 	firstboot.saveToLocalSnapshot = true
+INFO    | 	android.sdk.root = /home/wtz/courses/web-security/DiffCSP/mobile-setting
+INFO    | 	android.avd.home = /root/.android/avd
+INFO    | .
+INFO    | QEMU options list:
+INFO    | 	 argv[00] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless"
+INFO    | 	 argv[01] = "-dns-server"
+INFO    | 	 argv[02] = "127.0.0.53"
+INFO    | 	 argv[03] = "-no-audio"
+INFO    | 	 argv[04] = "-mem-path"
+INFO    | 	 argv[05] = "/root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img"
+INFO    | 	 argv[06] = "-serial"
+INFO    | 	 argv[07] = "null"
+INFO    | 	 argv[08] = "-android-ports"
+INFO    | 	 argv[09] = "5554,5555"
+INFO    | 	 argv[10] = "-device"
+INFO    | 	 argv[11] = "goldfish_pstore,addr=0xff018000,size=0x10000,file=/root/.android/avd/../avd/device_1.avd/data/misc/pstore/pstore.bin"
+INFO    | 	 argv[12] = "-cpu"
+INFO    | 	 argv[13] = "android64-xts"
+INFO    | 	 argv[14] = "-enable-kvm"
+INFO    | 	 argv[15] = "-m"
+INFO    | 	 argv[16] = "4096"
+INFO    | 	 argv[17] = "-lcd-density"
+INFO    | 	 argv[18] = "440"
+INFO    | 	 argv[19] = "-object"
+INFO    | 	 argv[20] = "iothread,id=disk-iothread"
+INFO    | 	 argv[21] = "-nodefaults"
+INFO    | 	 argv[22] = "-kernel"
+INFO    | 	 argv[23] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu"
+INFO    | 	 argv[24] = "-initrd"
+INFO    | 	 argv[25] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img"
+INFO    | 	 argv[26] = "-drive"
+INFO    | 	 argv[27] = "if=none,index=0,id=system,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img,read-only"
+INFO    | 	 argv[28] = "-device"
+INFO    | 	 argv[29] = "virtio-blk-pci,drive=system,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[30] = "-drive"
+INFO    | 	 argv[31] = "if=none,index=1,id=cache,if=none,file=/root/.android/avd/../avd/device_1.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[32] = "-device"
+INFO    | 	 argv[33] = "virtio-blk-pci,drive=cache,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[34] = "-drive"
+INFO    | 	 argv[35] = "if=none,index=2,id=userdata,if=none,file=/root/.android/avd/../avd/device_1.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[36] = "-device"
+INFO    | 	 argv[37] = "virtio-blk-pci,drive=userdata,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[38] = "-drive"
+INFO    | 	 argv[39] = "if=none,index=3,id=encrypt,if=none,file=/root/.android/avd/../avd/device_1.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[40] = "-device"
+INFO    | 	 argv[41] = "virtio-blk-pci,drive=encrypt,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[42] = "-drive"
+INFO    | 	 argv[43] = "if=none,index=4,id=vendor,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img,read-only"
+INFO    | 	 argv[44] = "-device"
+INFO    | 	 argv[45] = "virtio-blk-pci,drive=vendor,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[46] = "-netdev"
+INFO    | 	 argv[47] = "user,id=mynet"
+INFO    | 	 argv[48] = "-device"
+INFO    | 	 argv[49] = "virtio-net-pci,netdev=mynet"
+INFO    | 	 argv[50] = "-device"
+INFO    | 	 argv[51] = "virtio-rng-pci"
+INFO    | 	 argv[52] = "-show-cursor"
+INFO    | 	 argv[53] = "-L"
+INFO    | 	 argv[54] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/lib/pc-bios"
+INFO    | 	 argv[55] = "-soundhw"
+INFO    | 	 argv[56] = "hda"
+INFO    | 	 argv[57] = "-vga"
+INFO    | 	 argv[58] = "none"
+INFO    | 	 argv[59] = "-append"
+INFO    | 	 argv[60] = "no_timer_check 8250.nr_uarts=1 clocksource=pit console=0 cma=292M@0-4G mac80211_hwsim.channels=2 loop.max_part=7 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 printk.devkmsg=on qemu=1 androidboot.hardware=ranchu androidboot.serialno=EMULATOR33X1X23X0 android.bootanim=0 qemu.gles=1 qemu.settings.system.screen_off_timeout=2147483647 qemu.encrypt=1 qemu.vsync=60 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=196608 qemu.uirenderer=skiagl qemu.dalvik.vm.heapsize=576m qemu.camera_protocol_ver=1 qemu.camera_hq_edge_processing=0 androidboot.vbmeta.size=6144 androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.digest=b9f67e285b7a2b098478e493628534ac78b3ac3015c3cb204fe8f7d6a51021bb androidboot.boot_devices=pci0000:00/0000:00:03.0 qemu.wifi=1 qemu.hwcodec.avcdec=2 qemu.hwcodec.hevcdec=2 qemu.hwcodec.vpxdec=2 android.qemud=1 qemu.avd_name=device_1"
+INFO    | 	 argv[61] = "-android-hw"
+INFO    | 	 argv[62] = "/root/.android/avd/../avd/device_1.avd/hardware-qemu.ini"
+INFO    | Concatenated QEMU options: /home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless -dns-server 127.0.0.53 -no-audio -mem-path /root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img -serial null -android-ports 5554,5555 -device goldfish_pstore,addr=0xff018000,size=0x10000,file=/root/.android/avd/../avd/device_1.avd/data/misc/pstore/pstore.bin -cpu android64-xts -enable-kvm -m 4096 -lcd-density 440 -object iothread,id=disk-iothread -nodefaults -kernel /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu -initrd /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img -drive if=none,index=0,id=system,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img,read-only -device virtio-blk-pci,drive=system,iothread=disk-iothread,modern-pio-notify -drive if=none,index=1,id=cache,if=none,file=/root/.android/avd/../avd/device_1.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=cache,iothread=disk-iothread,modern-pio-notify -drive if=none,index=2,id=userdata,if=none,file=/root/.android/avd/../avd/device_1.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=userdata,iothread=disk-iothread,modern-pio-notify -drive if=none,index=3,id=encrypt,if=none,file=/root/.android/avd/../avd/device_1.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=encrypt,iothread=disk-iothread,modern-pio-notify -drive if=none,index=4,id=vendor,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img,read-only -device virtio-blk-pci,drive=vendor,iothread=disk-iothread,modern-pio-notify -netdev user,id=mynet -device virtio-net-pci,netdev=mynet -device virtio-rng-pci 
+DEBUG   | Android qemu version 33.1.23.0 (build_id 11150993) (CL:N/A)
+DEBUG   | Starting QEMU main loop
+DEBUG   | Adding boot property: 'ro.opengles.version' = '196608'
+DEBUG   | Adding boot property: 'qemu.sf.fake_camera' = 'none'
+DEBUG   | Adding boot property: 'qemu.adb.secure' = '1'
+DEBUG   | Adding boot property: 'dalvik.vm.heapsize' = '576m'
+DEBUG   | Adding boot property: 'qemu.hw.mainkeys' = '0'
+DEBUG   | Adding boot property: 'qemu.sf.lcd_density' = '440'
+DEBUG   | goldfish_events.have-dpad: false
+DEBUG   | goldfish_events.have-trackball: false
+DEBUG   | goldfish_events.have-camera: false
+DEBUG   | goldfish_events.have-keyboard: false
+DEBUG   | goldfish_events.have-lidswitch: true
+DEBUG   | goldfish_events.have-tabletmode: false
+DEBUG   | goldfish_events.have-touch: false
+DEBUG   | goldfish_events.have-multitouch: false
+DEBUG   | Adding boot property: 'net.wifi_mac_prefix' = '5554'
+pc_memory_init: above 4g size: 40000000
+DEBUG   | Not using any http proxy
+DEBUG   | Adding boot property: 'qemu.timezone' = 'Etc/UTC'
+DEBUG   | android_hw_fingerprint_init: fingerprint qemud listen service initialized
+DEBUG   | emulator_window_fb_rotate
+I1214 08:04:33.069203 3936595 FrameBuffer.cpp:3682] setDisplayConfigs w 1080 h 2160 dpiX 440 dpiY 440
+DEBUG   | setDisplayPose 0 x 0 y 0 w 1080 h 2160 dpi 0
+I1214 08:04:33.069248 3936595 FrameBuffer.cpp:3695] setDisplayActiveConfig 0
+DEBUG   | config multidisplay with config.ini 0x0 0x0 0x0
+DEBUG   | No acpi ini file provided, using default
+INFO    | Cold boot: requested by the user
+WARNING | Cold boot:  requested by the user
+DEBUG   | No acpi ini file provided, using default
+DEBUG   | _hwFingerprint_connect: connect finger print listen is called
+DEBUG   | got message from guest system fingerprint HAL
+DEBUG   | onGuestSendCommand: [0x56486052ec30] Adb connected, start proxing data
+DEBUG   | onGuestClose: [0x56486296c000] Adb closed by guest
+DEBUG   | onGuestClose: [0x56486052ec30] Adb closed by guest
+DEBUG   | onGuestSendCommand: [0x56486052ec30] Adb connected, start proxing data
+INFO    | Boot completed in 58553 ms
+INFO    | Increasing screen off timeout, logcat buffer size to 2M.
+DEBUG   | applying overlayName pixel_3
+E1214 08:05:33.983294 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983359 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983393 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983403 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983410 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983418 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983426 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983433 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983440 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983448 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983467 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983475 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983482 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983490 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983497 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983505 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983512 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983520 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983527 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983534 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983542 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983549 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983557 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983564 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983572 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983579 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983586 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983594 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983601 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983608 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983616 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983632 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983641 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983648 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983655 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983663 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983670 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983678 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983685 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983692 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983700 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983707 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983714 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983722 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983729 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983736 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983744 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983751 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983758 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983766 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983773 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983780 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983788 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983795 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983803 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983810 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983817 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983824 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983832 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983840 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983850 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983858 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983865 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983872 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983880 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.983887 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.983894 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.983902 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.984265 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.984277 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.984286 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.984294 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.984302 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.984309 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.984317 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.984325 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.984332 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.984340 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.984347 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.984355 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.984363 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.984371 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.984378 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.984386 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.984393 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.984401 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.984408 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.984416 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.984424 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.984431 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.984439 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.984446 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.984454 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.984461 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.984469 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.984477 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.984484 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.984492 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.984499 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.984507 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.984514 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.984522 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:33.984529 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:05:33.984537 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:05:33.984544 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:05:41.470182 3936798 FrameBuffer.cpp:3765] Failed to find ColorBuffer:39
+DEBUG   | Timed out with running command 
+DEBUG   | Timed out with running command  (3x)
+DEBUG   | Registering pipe service multidisplay
+DEBUG   | MultiDisplayPipe created 0x56486388b7a0
+DEBUG   | MultiDisplayPipe recevied QUERY
+DEBUG   | MultiDisplayPipe send add id 0 width 1080 height 2160 dpi 0 flag 0
+DEBUG   | Timed out with running command 
+ERROR   | detected a hanging thread 'QEMU2 main loop'. No response for 15590 ms
+ERROR   | detected a hanging thread 'QEMU2 CPU0 thread'. No response for 21442 ms
+ERROR   | detected a hanging thread 'QEMU2 main loop'. No response for 15717 ms
+ERROR   | detected a hanging thread 'QEMU2 main loop'. No response for 15816 ms
+INFO    | Android emulator version 33.1.23.0 (build_id 11150993) (CL:N/A)
+DEBUG   | Current emulator version 33.1.23 is the same as the required version 33.1.23.
+INFO    | Found systemPath /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64/
+WARNING | Please update the emulator to one that supports the feature(s): Vulkan
+WARNING | FeatureControl is requesting a non existing feature.
+WARNING | Your GPU drivers may have a bug. Switching to software rendering.
+I1214 08:42:26.234009 3954269 HealthMonitor.cpp:279] HealthMonitor disabled.
+I1214 08:42:26.324736 3954269 FrameBuffer.cpp:486] Graphics Adapter Vendor Google (Google Inc.)
+I1214 08:42:26.324792 3954269 FrameBuffer.cpp:487] Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+I1214 08:42:26.324802 3954269 FrameBuffer.cpp:488] Graphics API Version OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)
+I1214 08:42:26.324810 3954269 FrameBuffer.cpp:489] Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+I1214 08:42:26.324819 3954269 FrameBuffer.cpp:490] Graphics Device Extensions N/A
+INFO    | Storing crashdata in: , detection is enabled for process: 3954269
+INFO    | Duplicate loglines will be removed, if you wish to see each individual line launch with the -log-nofilter flag.
+DEBUG   | autoconfig: -skin 1080x2160
+DEBUG   | autoconfig: -skindir (null)
+DEBUG   | autoconfig: -kernel /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu
+DEBUG   | Target arch = 'x86_64'
+DEBUG   | Auto-detect: Kernel image requires new device naming scheme.
+DEBUG   | Auto-detect: Kernel does not support YAFFS2 partitions.
+DEBUG   | autoconfig: -ramdisk /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img
+DEBUG   | Using initial system image: /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img
+DEBUG   | Using initial vendor image: /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img
+DEBUG   | autoconfig: -initdata /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//userdata.img
+DEBUG   | autoconfig: -cache /root/.android/avd/../avd/device_1.avd/cache.img
+DEBUG   | Physical RAM size: 4096MB
+DEBUG   | VM heap size 0MB is below hardware specified minimum of 576MB,setting it to that value
+DEBUG   | System image is read only
+DEBUG   | Found 1 DNS servers:
+DEBUG   | 	127.0.0.53
+DEBUG   | found magic skin width=1080 height=2160 bpp=16
+DEBUG   | File System is ext4, do not disable QuickbootFileBacked feature
+DEBUG   | statvfs('/root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img') failed: No such file or directory
+DEBUG   | Requested console port 5554: Inferring adb port 5555.
+DEBUG   | Creating ext4 userdata partition: /root/.android/avd/../avd/device_1.avd/data
+DEBUG   | path_copy_file: source file is un-readable: /root/.android/adbkey.pub
+DEBUG   | Fall back to adbkey /root/.android/adbkey successfully
+Creating filesystem with parameters:
+    Size: 6442450944
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 8192
+    Inode size: 256
+    Journal blocks: 24576
+    Label: 
+    Blocks: 1572864
+    Block groups: 48
+    Reserved block group size: 383
+Created filesystem with 27/393216 inodes and 52348/1572864 blocks
+DEBUG   | Creating empty ext4 cache partition: /root/.android/avd/../avd/device_1.avd/cache.img
+Creating filesystem with parameters:
+    Size: 69206016
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 4224
+    Inode size: 256
+    Journal blocks: 1024
+    Label: 
+    Blocks: 16896
+    Block groups: 1
+    Reserved block group size: 7
+Created filesystem with 11/4224 inodes and 1302/16896 blocks
+DEBUG   | CPU Acceleration: working
+DEBUG   | CPU Acceleration status: KVM (version 12) is installed and usable.
+DEBUG   | handleCpuAcceleration: feature check for hvf
+DEBUG   | registered 'boot-properties' qemud service
+DEBUG   | Adding boot property: 'qemu.cmdline' = 'androidboot.logcat=*:V androidboot.consolepipe=qemu_pipe,pipe:logcat'
+DEBUG   | Adding boot property: 'qemu.logcat' = 'start'
+DEBUG   |  no root specified: 
+DEBUG   | Path:/home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb protocol version: 41
+DEBUG   | Found: 1 adb executables
+DEBUG   | Adb: /home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb
+DEBUG   | Path:/home/wtz/courses/web-security/DiffCSP/mobile-setting/platform-tools/adb protocol version: 41
+INFO    | No consent for crashreport c18e4b0f-384d-4683-9ce6-81e4765fb841, deleting.
+library_mode swangle_indirect gpu mode swangle_indirect
+DEBUG   | GPU emulation enabled using 'swangle_indirect' mode
+DEBUG   | Initializing hardware OpenGLES emulation support
+DEBUG   | create display 0
+DEBUG   | setDisplayPose 0 x 0 y 0 w 1080 h 2160 dpi 0
+INFO    | Setting vsync to 60 hz
+DEBUG   | Found 1 DNS servers:
+DEBUG   | 	127.0.0.53
+INFO    | Content of hardware configuration file:
+INFO    | 	hw.cpu.arch = x86_64
+INFO    | 	hw.cpu.ncore = 1
+INFO    | 	hw.ramSize = 4096
+INFO    | 	hw.screen = no-touch
+INFO    | 	hw.mainKeys = false
+INFO    | 	hw.trackBall = false
+INFO    | 	hw.keyboard = false
+INFO    | 	hw.keyboard.lid = true
+INFO    | 	hw.keyboard.charmap = qwerty2
+INFO    | 	hw.dPad = false
+INFO    | 	hw.rotaryInput = false
+INFO    | 	hw.gsmModem = true
+INFO    | 	hw.gps = true
+INFO    | 	hw.battery = true
+INFO    | 	hw.accelerometer = true
+INFO    | 	hw.accelerometer_uncalibrated = true
+INFO    | 	hw.gyroscope = true
+INFO    | 	hw.audioInput = true
+INFO    | 	hw.audioOutput = true
+INFO    | 	hw.sdCard = true
+INFO    | 	disk.cachePartition = true
+INFO    | 	disk.cachePartition.path = /root/.android/avd/../avd/device_1.avd/cache.img
+INFO    | 	disk.cachePartition.size = 66m
+INFO    | 	test.quitAfterBootTimeOut = -1
+INFO    | 	test.delayAdbTillBootComplete = 0
+INFO    | 	test.monitorAdb = 0
+INFO    | 	hw.lcd.width = 1080
+INFO    | 	hw.lcd.height = 2160
+INFO    | 	hw.lcd.depth = 16
+INFO    | 	hw.lcd.circular = false
+INFO    | 	hw.lcd.density = 440
+INFO    | 	hw.lcd.backlight = true
+INFO    | 	hw.lcd.vsync = 60
+INFO    | 	hw.gltransport = pipe
+INFO    | 	hw.gltransport.asg.writeBufferSize = 1048576
+INFO    | 	hw.gltransport.asg.writeStepSize = 4096
+INFO    | 	hw.gltransport.asg.dataRingSize = 32768
+INFO    | 	hw.gltransport.drawFlushInterval = 800
+INFO    | 	hw.displayRegion.0.1.xOffset = -1
+INFO    | 	hw.displayRegion.0.1.yOffset = -1
+INFO    | 	hw.displayRegion.0.1.width = 0
+INFO    | 	hw.displayRegion.0.1.height = 0
+INFO    | 	hw.displayRegion.0.2.xOffset = -1
+INFO    | 	hw.displayRegion.0.2.yOffset = -1
+INFO    | 	hw.displayRegion.0.2.width = 0
+INFO    | 	hw.displayRegion.0.2.height = 0
+INFO    | 	hw.displayRegion.0.3.xOffset = -1
+INFO    | 	hw.displayRegion.0.3.yOffset = -1
+INFO    | 	hw.displayRegion.0.3.width = 0
+INFO    | 	hw.displayRegion.0.3.height = 0
+INFO    | 	hw.display1.width = 0
+INFO    | 	hw.display1.height = 0
+INFO    | 	hw.display1.density = 0
+INFO    | 	hw.display1.xOffset = -1
+INFO    | 	hw.display1.yOffset = -1
+INFO    | 	hw.display1.flag = 0
+INFO    | 	hw.display2.width = 0
+INFO    | 	hw.display2.height = 0
+INFO    | 	hw.display2.density = 0
+INFO    | 	hw.display2.xOffset = -1
+INFO    | 	hw.display2.yOffset = -1
+INFO    | 	hw.display2.flag = 0
+INFO    | 	hw.display3.width = 0
+INFO    | 	hw.display3.height = 0
+INFO    | 	hw.display3.density = 0
+INFO    | 	hw.display3.xOffset = -1
+INFO    | 	hw.display3.yOffset = -1
+INFO    | 	hw.display3.flag = 0
+INFO    | 	hw.multi_display_window = false
+INFO    | 	hw.hotplug_multi_display = false
+INFO    | 	hw.gpu.enabled = true
+INFO    | 	hw.gpu.mode = swangle_indirect
+INFO    | 	hw.initialOrientation = portrait
+INFO    | 	hw.camera.back = none
+INFO    | 	hw.camera.front = none
+INFO    | 	vm.heapSize = 576
+INFO    | 	hw.sensors.light = true
+INFO    | 	hw.sensors.pressure = true
+INFO    | 	hw.sensors.humidity = true
+INFO    | 	hw.sensors.proximity = true
+INFO    | 	hw.sensors.magnetic_field = true
+INFO    | 	hw.sensors.magnetic_field_uncalibrated = true
+INFO    | 	hw.sensors.gyroscope_uncalibrated = true
+INFO    | 	hw.sensors.orientation = true
+INFO    | 	hw.sensors.temperature = true
+INFO    | 	hw.sensors.rgbclight = false
+INFO    | 	hw.sensor.hinge = false
+INFO    | 	hw.sensor.hinge.count = 0
+INFO    | 	hw.sensor.hinge.type = 0
+INFO    | 	hw.sensor.hinge.sub_type = 0
+INFO    | 	hw.sensor.hinge.resizable.config = 1
+INFO    | 	hw.sensor.hinge.fold_to_displayRegion.0.1_at_posture = 1
+INFO    | 	hw.sensor.roll = false
+INFO    | 	hw.sensor.roll.count = 0
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.1_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.2_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.3_at_posture = 6
+INFO    | 	hw.sensors.heart_rate = false
+INFO    | 	hw.sensors.wrist_tilt = false
+INFO    | 	hw.useext4 = true
+INFO    | 	hw.arc = false
+INFO    | 	hw.arc.autologin = false
+INFO    | 	hw.device.name = pixel_3
+INFO    | 	kernel.path = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu
+INFO    | 	kernel.newDeviceNaming = yes
+INFO    | 	kernel.supportsYaffs2 = no
+INFO    | 	disk.ramdisk.path = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img
+INFO    | 	disk.systemPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img
+INFO    | 	disk.systemPartition.size = 3083m
+INFO    | 	disk.vendorPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img
+INFO    | 	disk.vendorPartition.size = 800m
+INFO    | 	disk.dataPartition.path = /root/.android/avd/../avd/device_1.avd/userdata-qemu.img
+INFO    | 	disk.dataPartition.initPath = /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//userdata.img
+INFO    | 	disk.dataPartition.size = 6g
+INFO    | 	disk.encryptionKeyPartition.path = /root/.android/avd/../avd/device_1.avd/encryptionkey.img
+INFO    | 	PlayStore.enabled = false
+INFO    | 	avd.name = device_1
+INFO    | 	avd.id = device_1
+INFO    | 	fastboot.forceColdBoot = false
+INFO    | 	userdata.useQcow2 = false
+INFO    | 	firstboot.bootFromDownloadableSnapshot = true
+INFO    | 	firstboot.bootFromLocalSnapshot = true
+INFO    | 	firstboot.saveToLocalSnapshot = true
+INFO    | 	android.sdk.root = /home/wtz/courses/web-security/DiffCSP/mobile-setting
+INFO    | 	android.avd.home = /root/.android/avd
+INFO    | .
+INFO    | QEMU options list:
+INFO    | 	 argv[00] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless"
+INFO    | 	 argv[01] = "-dns-server"
+INFO    | 	 argv[02] = "127.0.0.53"
+INFO    | 	 argv[03] = "-no-audio"
+INFO    | 	 argv[04] = "-mem-path"
+INFO    | 	 argv[05] = "/root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img"
+INFO    | 	 argv[06] = "-serial"
+INFO    | 	 argv[07] = "null"
+INFO    | 	 argv[08] = "-android-ports"
+INFO    | 	 argv[09] = "5554,5555"
+INFO    | 	 argv[10] = "-device"
+INFO    | 	 argv[11] = "goldfish_pstore,addr=0xff018000,size=0x10000,file=/root/.android/avd/../avd/device_1.avd/data/misc/pstore/pstore.bin"
+INFO    | 	 argv[12] = "-cpu"
+INFO    | 	 argv[13] = "android64-xts"
+INFO    | 	 argv[14] = "-enable-kvm"
+INFO    | 	 argv[15] = "-m"
+INFO    | 	 argv[16] = "4096"
+INFO    | 	 argv[17] = "-lcd-density"
+INFO    | 	 argv[18] = "440"
+INFO    | 	 argv[19] = "-object"
+INFO    | 	 argv[20] = "iothread,id=disk-iothread"
+INFO    | 	 argv[21] = "-nodefaults"
+INFO    | 	 argv[22] = "-kernel"
+INFO    | 	 argv[23] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu"
+INFO    | 	 argv[24] = "-initrd"
+INFO    | 	 argv[25] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img"
+INFO    | 	 argv[26] = "-drive"
+INFO    | 	 argv[27] = "if=none,index=0,id=system,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img,read-only"
+INFO    | 	 argv[28] = "-device"
+INFO    | 	 argv[29] = "virtio-blk-pci,drive=system,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[30] = "-drive"
+INFO    | 	 argv[31] = "if=none,index=1,id=cache,if=none,file=/root/.android/avd/../avd/device_1.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[32] = "-device"
+INFO    | 	 argv[33] = "virtio-blk-pci,drive=cache,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[34] = "-drive"
+INFO    | 	 argv[35] = "if=none,index=2,id=userdata,if=none,file=/root/.android/avd/../avd/device_1.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[36] = "-device"
+INFO    | 	 argv[37] = "virtio-blk-pci,drive=userdata,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[38] = "-drive"
+INFO    | 	 argv[39] = "if=none,index=3,id=encrypt,if=none,file=/root/.android/avd/../avd/device_1.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[40] = "-device"
+INFO    | 	 argv[41] = "virtio-blk-pci,drive=encrypt,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[42] = "-drive"
+INFO    | 	 argv[43] = "if=none,index=4,id=vendor,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img,read-only"
+INFO    | 	 argv[44] = "-device"
+INFO    | 	 argv[45] = "virtio-blk-pci,drive=vendor,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[46] = "-netdev"
+INFO    | 	 argv[47] = "user,id=mynet"
+INFO    | 	 argv[48] = "-device"
+INFO    | 	 argv[49] = "virtio-net-pci,netdev=mynet"
+INFO    | 	 argv[50] = "-device"
+INFO    | 	 argv[51] = "virtio-rng-pci"
+INFO    | 	 argv[52] = "-show-cursor"
+INFO    | 	 argv[53] = "-L"
+INFO    | 	 argv[54] = "/home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/lib/pc-bios"
+INFO    | 	 argv[55] = "-soundhw"
+INFO    | 	 argv[56] = "hda"
+INFO    | 	 argv[57] = "-vga"
+INFO    | 	 argv[58] = "none"
+INFO    | 	 argv[59] = "-append"
+INFO    | 	 argv[60] = "no_timer_check 8250.nr_uarts=1 clocksource=pit console=0 cma=292M@0-4G mac80211_hwsim.channels=2 loop.max_part=7 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 printk.devkmsg=on qemu=1 androidboot.hardware=ranchu androidboot.serialno=EMULATOR33X1X23X0 android.bootanim=0 qemu.gles=1 qemu.settings.system.screen_off_timeout=2147483647 qemu.encrypt=1 qemu.vsync=60 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=196608 qemu.uirenderer=skiagl qemu.dalvik.vm.heapsize=576m qemu.camera_protocol_ver=1 qemu.camera_hq_edge_processing=0 androidboot.vbmeta.size=6144 androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.digest=b9f67e285b7a2b098478e493628534ac78b3ac3015c3cb204fe8f7d6a51021bb androidboot.boot_devices=pci0000:00/0000:00:03.0 qemu.wifi=1 qemu.hwcodec.avcdec=2 qemu.hwcodec.hevcdec=2 qemu.hwcodec.vpxdec=2 android.qemud=1 qemu.avd_name=device_1"
+INFO    | 	 argv[61] = "-android-hw"
+INFO    | 	 argv[62] = "/root/.android/avd/../avd/device_1.avd/hardware-qemu.ini"
+INFO    | Concatenated QEMU options: /home/wtz/courses/web-security/DiffCSP/mobile-setting/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless -dns-server 127.0.0.53 -no-audio -mem-path /root/.android/avd/../avd/device_1.avd/snapshots/default_boot/ram.img -serial null -android-ports 5554,5555 -device goldfish_pstore,addr=0xff018000,size=0x10000,file=/root/.android/avd/../avd/device_1.avd/data/misc/pstore/pstore.bin -cpu android64-xts -enable-kvm -m 4096 -lcd-density 440 -object iothread,id=disk-iothread -nodefaults -kernel /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//kernel-ranchu -initrd /home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//ramdisk.img -drive if=none,index=0,id=system,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//system.img,read-only -device virtio-blk-pci,drive=system,iothread=disk-iothread,modern-pio-notify -drive if=none,index=1,id=cache,if=none,file=/root/.android/avd/../avd/device_1.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=cache,iothread=disk-iothread,modern-pio-notify -drive if=none,index=2,id=userdata,if=none,file=/root/.android/avd/../avd/device_1.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=userdata,iothread=disk-iothread,modern-pio-notify -drive if=none,index=3,id=encrypt,if=none,file=/root/.android/avd/../avd/device_1.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=encrypt,iothread=disk-iothread,modern-pio-notify -drive if=none,index=4,id=vendor,if=none,file=/home/wtz/courses/web-security/DiffCSP/mobile-setting/system-images/android-30/google_apis/x86_64//vendor.img,read-only -device virtio-blk-pci,drive=vendor,iothread=disk-iothread,modern-pio-notify -netdev user,id=mynet -device virtio-net-pci,netdev=mynet -device virtio-rng-pci 
+DEBUG   | Android qemu version 33.1.23.0 (build_id 11150993) (CL:N/A)
+DEBUG   | Starting QEMU main loop
+DEBUG   | Adding boot property: 'ro.opengles.version' = '196608'
+DEBUG   | Adding boot property: 'qemu.sf.fake_camera' = 'none'
+DEBUG   | Adding boot property: 'qemu.adb.secure' = '1'
+DEBUG   | Adding boot property: 'dalvik.vm.heapsize' = '576m'
+DEBUG   | Adding boot property: 'qemu.hw.mainkeys' = '0'
+DEBUG   | Adding boot property: 'qemu.sf.lcd_density' = '440'
+DEBUG   | goldfish_events.have-dpad: false
+DEBUG   | goldfish_events.have-trackball: false
+DEBUG   | goldfish_events.have-camera: false
+DEBUG   | goldfish_events.have-keyboard: false
+DEBUG   | goldfish_events.have-lidswitch: true
+DEBUG   | goldfish_events.have-tabletmode: false
+DEBUG   | goldfish_events.have-touch: false
+DEBUG   | goldfish_events.have-multitouch: false
+DEBUG   | Adding boot property: 'net.wifi_mac_prefix' = '5554'
+pc_memory_init: above 4g size: 40000000
+DEBUG   | Not using any http proxy
+DEBUG   | Adding boot property: 'qemu.timezone' = 'Etc/UTC'
+DEBUG   | android_hw_fingerprint_init: fingerprint qemud listen service initialized
+DEBUG   | emulator_window_fb_rotate
+I1214 08:42:26.657812 3954300 FrameBuffer.cpp:3682] setDisplayConfigs w 1080 h 2160 dpiX 440 dpiY 440
+DEBUG   | setDisplayPose 0 x 0 y 0 w 1080 h 2160 dpi 0
+I1214 08:42:26.657849 3954300 FrameBuffer.cpp:3695] setDisplayActiveConfig 0
+DEBUG   | config multidisplay with config.ini 0x0 0x0 0x0
+DEBUG   | No acpi ini file provided, using default
+INFO    | Cold boot: requested by the user
+WARNING | Cold boot:  requested by the user
+DEBUG   | No acpi ini file provided, using default
+DEBUG   | _hwFingerprint_connect: connect finger print listen is called
+DEBUG   | got message from guest system fingerprint HAL
+DEBUG   | onGuestSendCommand: [0x56272f918c30] Adb connected, start proxing data
+DEBUG   | onGuestClose: [0x56272f9185b0] Adb closed by guest
+DEBUG   | onGuestClose: [0x56272f918c30] Adb closed by guest
+DEBUG   | onGuestSendCommand: [0x56272f918c30] Adb connected, start proxing data
+E1214 08:43:52.141191 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168347 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168362 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168373 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168382 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168391 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168400 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168410 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168418 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168427 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168438 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168447 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168456 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168465 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168474 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168483 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168491 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168512 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:29
+E1214 08:43:52.168522 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168531 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168540 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168548 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168557 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168566 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168574 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168584 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168592 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168601 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168609 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168618 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168627 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168636 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168644 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168653 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168661 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168670 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168679 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168687 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168696 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168705 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168713 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168722 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168731 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168739 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168748 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168757 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:17
+E1214 08:43:52.168765 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:14
+E1214 08:43:52.168774 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:16
+E1214 08:43:52.168914 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:32
+INFO    | Boot completed in 89624 ms
+INFO    | Increasing screen off timeout, logcat buffer size to 2M.
+DEBUG   | applying overlayName pixel_3
+DEBUG   | Timed out with running command 
+DEBUG   | Timed out with running command 
+DEBUG   | Registering pipe service multidisplay
+DEBUG   | MultiDisplayPipe created 0x5627417cbdc0
+DEBUG   | MultiDisplayPipe recevied QUERY
+DEBUG   | MultiDisplayPipe send add id 0 width 1080 height 2160 dpi 0 flag 0
+DEBUG   | Timed out with running command 
+DEBUG   | MultiDisplayPipe deleted self 0x5627417cbdc0
+E1214 08:53:44.132473 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:85
+E1214 08:53:44.153176 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:89
+E1214 08:53:44.153207 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:56
+E1214 08:53:44.153216 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:64
+E1214 08:53:44.153224 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:54
+E1214 08:53:44.153232 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:56
+E1214 08:53:44.153240 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:84
+E1214 08:53:44.153247 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:92
+E1214 08:53:44.153255 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:91
+E1214 08:53:44.153263 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:82
+E1214 08:53:44.153270 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:85
+E1214 08:53:44.153278 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:84
+E1214 08:53:44.153285 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:82
+E1214 08:53:44.153293 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:64
+E1214 08:53:44.153300 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:42
+E1214 08:53:44.153308 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:54
+E1214 08:53:44.153315 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:53
+E1214 08:53:44.153323 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:56
+E1214 08:53:44.153330 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:64
+E1214 08:53:44.153338 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:54
+E1214 08:53:44.153345 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:56
+E1214 08:53:44.153353 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:64
+E1214 08:53:44.153360 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:54
+E1214 08:53:44.153367 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:56
+E1214 08:53:44.153375 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:89
+E1214 08:53:44.153382 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:64
+E1214 08:53:44.153390 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:54
+E1214 08:53:44.153397 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:56
+E1214 08:53:44.153405 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:64
+E1214 08:53:44.153412 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:54
+E1214 08:53:44.153420 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:56
+E1214 08:53:44.153427 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:64
+E1214 08:53:44.153435 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:54
+E1214 08:53:44.153442 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:56
+E1214 08:53:44.153449 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:64
+E1214 08:53:44.153457 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:54
+E1214 08:53:44.153464 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:56
+E1214 08:53:44.153472 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:64
+E1214 08:53:44.153479 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:54
+E1214 08:53:44.153487 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:56
+E1214 08:53:44.153494 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:64
+E1214 08:53:44.153502 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:54
+E1214 08:53:44.153509 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:56
+E1214 08:53:44.153516 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:64
+E1214 08:53:44.153535 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:54
+E1214 08:53:44.153543 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:56
+E1214 08:53:44.153550 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:64
+E1214 08:53:44.153558 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:54
+E1214 08:53:44.153565 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:56
+E1214 08:53:44.153573 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:64
+E1214 08:53:44.153580 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:54
+E1214 08:53:44.153587 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:85
+E1214 08:53:44.153595 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:84
+E1214 08:53:44.153602 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:56
+E1214 08:53:44.153610 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:64
+E1214 08:53:44.153617 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:82
+E1214 08:53:44.153624 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:85
+E1214 08:53:44.153632 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:84
+E1214 08:53:44.153639 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:82
+E1214 08:53:44.153647 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:85
+E1214 08:53:44.153654 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:84
+E1214 08:53:44.153662 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:82
+E1214 08:53:44.153669 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:85
+E1214 08:53:44.153676 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:84
+E1214 08:53:44.153684 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:82
+E1214 08:53:44.153691 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:85
+E1214 08:53:44.153699 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:84
+E1214 08:53:44.153706 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:82
+E1214 08:53:44.153713 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:85
+E1214 08:53:44.153721 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:84
+E1214 08:53:44.153728 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:82
+E1214 08:53:44.153736 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:85
+E1214 08:53:44.153743 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:84
+E1214 08:53:44.153750 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:82
+E1214 08:53:44.153758 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:85
+E1214 08:53:44.153765 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:84
+E1214 08:53:44.153773 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:82
+E1214 08:53:44.153780 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:85
+E1214 08:53:44.153787 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:84
+E1214 08:53:44.153795 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:82
+E1214 08:53:44.153802 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:85
+E1214 08:53:44.153810 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:54
+E1214 08:53:44.153817 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:84
+E1214 08:53:44.153825 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:82
+E1214 08:54:04.880690 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:120
+E1214 08:54:04.954957 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:122
+E1214 08:54:04.954989 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:120
+E1214 08:58:34.005659 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.146869 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.146882 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.146892 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.146901 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.146910 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.146919 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.146937 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.146945 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.146953 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.146961 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.146969 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.146976 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.146984 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.146991 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.146998 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147006 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147013 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147021 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147028 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147036 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147043 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147050 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147058 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147065 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147073 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147080 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147106 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147115 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147122 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147130 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147137 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147145 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147152 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147159 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147167 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147174 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147181 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147189 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147196 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147203 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147211 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147218 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147226 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147233 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147240 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147248 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147255 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147263 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147270 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147277 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147285 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147292 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147300 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147307 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147316 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:132
+E1214 08:58:34.147323 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147334 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147342 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147349 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147356 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147364 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147372 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147387 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147395 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147402 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147410 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147417 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147424 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147432 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147439 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147447 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147454 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147461 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147469 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147476 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147484 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147491 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147499 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147506 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147513 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147521 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147528 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147536 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147543 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147550 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147558 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147565 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147573 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147580 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147587 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147595 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147602 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147610 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147617 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147625 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147632 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147639 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147647 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147654 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147661 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147669 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147676 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147684 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147691 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147699 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147709 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147716 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147724 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147731 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147739 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147746 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147754 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147761 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147769 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147776 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147784 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147791 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147798 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147806 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147813 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147821 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147828 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147835 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147843 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147850 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147858 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147865 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147872 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147880 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147887 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147894 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147902 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147909 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147917 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147924 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147937 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147945 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147952 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147959 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147967 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.147974 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.147982 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.147989 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148003 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148011 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148019 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148027 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148035 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148044 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148059 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148067 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148075 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148083 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148090 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148101 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148108 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148116 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148123 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148130 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148138 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148145 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148153 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148160 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148168 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148175 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148182 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148190 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148197 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148205 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148212 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148220 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148227 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148234 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148242 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148249 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148257 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148264 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148271 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148279 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148286 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148294 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148301 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148309 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148316 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148324 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148331 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148339 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148346 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148353 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148361 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148374 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148382 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148389 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148397 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148404 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148412 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148419 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148427 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148434 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148442 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148449 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148456 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148463 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148469 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148478 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148485 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148492 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148499 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148512 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148519 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148526 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148534 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148541 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148549 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148557 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148567 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148577 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148586 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148596 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148606 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148615 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148624 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148633 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148642 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148650 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148658 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148666 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148674 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148682 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148690 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148698 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148706 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148714 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148722 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148730 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148738 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148746 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148754 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148762 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148770 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148778 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148786 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148794 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148801 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148809 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148817 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148825 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148833 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148841 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148849 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148859 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:142
+E1214 08:58:34.148867 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148875 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148886 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148894 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148902 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148910 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148918 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148926 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148934 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148942 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148950 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148958 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148966 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148974 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.148982 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.148990 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.148998 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149006 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149014 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149022 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149030 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149038 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149045 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149053 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149061 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149069 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149077 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149085 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149093 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149101 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149109 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149117 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149125 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149133 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149141 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149149 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149157 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149165 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149173 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149181 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149189 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149197 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149205 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149213 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149221 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149229 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149237 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149245 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149253 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149261 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149269 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149287 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149296 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149305 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149314 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149323 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149332 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149342 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149351 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149361 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149370 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149378 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149387 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:34.149395 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:127
+E1214 08:58:34.149403 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:124
+E1214 08:58:34.149416 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:126
+E1214 08:58:38.602335 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:167
+E1214 08:58:38.602389 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:162
+E1214 08:58:38.602399 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:164
+E1214 08:58:38.602408 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:167
+E1214 08:58:38.602417 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:162
+E1214 08:58:38.602425 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:164
+E1214 08:58:38.602434 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:167
+E1214 08:58:38.602462 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:162
+E1214 08:58:38.602472 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:164
+E1214 08:58:52.498789 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:181
+E1214 08:58:52.499092 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:186
+E1214 08:58:52.499113 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:191
+E1214 08:58:55.975694 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:179
+E1214 08:58:55.975741 3954578 FrameBuffer.cpp:3765] Failed to find ColorBuffer:176
+DEBUG   | onGuestRecvData: [0x56272f918c30] Adb closed by host
+DEBUG   | onGuestClose: [0x56272f918c30] Adb closed by guest
+INFO    | Wait for emulator (pid 3954269) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+WARNING | Not saving state: RAM not mapped as shared
+[2223110:2223110:20231218,111100.859040:WARNING crashpad_client_linux.cc:419] prctl: Invalid argument (22)
+ERROR   | stop: Not implemented
+DEBUG   | Done with QEMU main loop
+DEBUG   | User configuration saved to /root/.android/avd/../avd/device_1.avd/emulator-user.ini
+XIO:  fatal IO error 17 (File exists) on X server ":99"
+      after 8 requests (8 known processed) with 0 events remaining.

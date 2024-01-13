@@ -60,7 +60,9 @@ def initialize_browser(target_browser, config, p, headers):
             'User-Agent': 'Chrome',
         })
         browser = p.chromium.launch()
+        # browser = p.chromium.launch(channel="chrome")
     elif target_browser == "Edge":
+        # browser = p.chromium.launch(channel="msedge")
         browser = p.chromium.launch()
         headers.update({
             'User-Agent': 'Edge',
@@ -134,6 +136,8 @@ def test_desktop(target_browser, target_csp_cnt, target_page_cnt, config, csp_li
             print(f'[*] Testing CSP {csp_cnt}: {test_csp}')
 
             with open(config["TEST_LIST"], mode="r") as f:
+                speed_test_start_time = time.time()
+                speed_test_cnt = 0
                 for test in f:
                     if page_cnt < target_page_cnt:
                         page_cnt += 1
@@ -177,6 +181,12 @@ def test_desktop(target_browser, target_csp_cnt, target_page_cnt, config, csp_li
                         context.set_default_timeout(4000)
                         page = context.new_page()
                     ####################################################
+                    speed_test_cnt += 1
+                    if speed_test_cnt == 100:
+                        time_interval = time.time() - speed_test_start_time
+                        print (f"[*] Speed Test: {time_interval / 100} seconds per page")
+                        speed_test_cnt = 0
+                        speed_test_start_time = time.time()
 
                     mid_time = time.time()
                     write_log(csp_id, "%s %lf ontesting" % (page_cnt, (mid_time - start_time + elapsed_time)), target_browser)
@@ -193,18 +203,18 @@ def test_desktop(target_browser, target_csp_cnt, target_page_cnt, config, csp_li
     target_csp_cnt += 1
 
     while True: # go to next csp testing.
-    	log = read_log(target_csp_cnt, target_browser)
-    	if log == 0:
-    		target_page_cnt = 0
-    		elapsed_time = 0
-    		break
-    	if (not ("finished" in log)) and (not ("ontesting" in log)):
-    		write_log(target_csp_cnt, log + " ontesting", target_browser)
-    		splitter = log.split(" ")
-    		target_page_cnt = int(splitter[0])
-    		elapsed_time = float(splitter[1])
-    		break
-    	target_csp_cnt += 1
+        log = read_log(target_csp_cnt, target_browser)
+        if log == 0:
+            target_page_cnt = 0
+            elapsed_time = 0
+            break
+        if (not ("finished" in log)) and (not ("ontesting" in log)):
+            write_log(target_csp_cnt, log + " ontesting", target_browser)
+            splitter = log.split(" ")
+            target_page_cnt = int(splitter[0])
+            elapsed_time = float(splitter[1])
+            break
+        target_csp_cnt += 1
     if not testing_end_check(csp_list_path, target_browser, target_csp_cnt):
     	test_desktop(target_browser, target_csp_cnt, target_page_cnt, config, csp_list_path, elapsed_time)
 
@@ -258,7 +268,7 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser(description='Tester for desktop browsers')
     ap.add_argument('-target_browser', '--target_browser', dest='target_browser', type=str, required=True)
     ap.add_argument('-start_csp', '--start_csp', dest='start_csp', type=int, required=True)
-    ap.add_argument('-csp_file', '--csp_file', dest='csp_file', default='testing_csp_list.txt', type=str)
+    ap.add_argument('-csp_file', '--csp_file', dest='csp_file', default='sampled_testing_csp_list.txt', type=str)
     ap.add_argument('-config_file', '--config_file', dest='config_file', default='conf.json', type=str)
     ap.add_argument('-num_core', '--num_core', dest='num_core', type=int, default=1, required=False)
     args = ap.parse_args()
@@ -277,25 +287,25 @@ if __name__ == '__main__':
     for id in range(args.num_core):
 
         while True:
-        	log = read_log(current_csp_cnt, target_browser)
-        	if log == 0:
-        		break
-        	if "finished" in log: # when the testing csp is already finished
-        		current_csp_cnt += 1
-        		continue
-        	else:
-        		break
+            log = read_log(current_csp_cnt, target_browser)
+            if log == 0:
+                break
+            if "finished" in log: # when the testing csp is already finished
+                current_csp_cnt += 1
+                continue
+            else:
+                break
 
         if testing_end_check(args.csp_file, args.target_browser, current_csp_cnt):
-        	break
+            break
 
         if log == 0:  # file is not exist (corresponding csp is not tested yet)
-        	target_page_cnt = 0
-        	elapsed_time = 0
+            target_page_cnt = 0
+            elapsed_time = 0
         else: # restore page_cnt and the elapsed time
-        	splitter = log.split(" ")
-        	target_page_cnt = int(splitter[0])
-        	elapsed_time = float(splitter[1])
+            splitter = log.split(" ")
+            target_page_cnt = int(splitter[0])
+            elapsed_time = float(splitter[1])
 
         parameters.append(PARAMETER(args.target_browser, current_csp_cnt, target_page_cnt, config, args.csp_file, elapsed_time))
         current_csp_cnt += 1

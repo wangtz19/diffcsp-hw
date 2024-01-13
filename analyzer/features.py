@@ -26,6 +26,7 @@ features["csp"] = [
 
 
 features["page"] = [
+"fetch('[REPORT_API]')",
 "url-self",
 "url-allowed",
 "url-blocked",
@@ -142,6 +143,7 @@ col_names = [
 "CSP-value:strict-dynamic",
 "CSP-value:hash",
 "CSP-value:unsafe-hashes",
+"fetch('[REPORT_API]')",
 "url-self",
 "url-allowed",
 "url-blocked",
@@ -255,6 +257,7 @@ reduced_col_names = [
 "CSP-value:hash",
 "CSP-value:unsafe-hashes",
 "JS_EXECUTION_METHOD",
+"fetch('[REPORT_API]')",
 "eval('[JS]')",
 "[Tagged inline JS]",
 "[Expending current HTML]",

@@ -301,10 +301,11 @@ print (X)
 X = feature_reduction(X)
 y = pima.label # Target variable
 
-
+print(f"shape before dropping: {X.shape}")
 X = X.replace(0, np.nan)
 X  = X.dropna(how='all', axis=1)
 X = X.replace(np.nan, 0)
+print(f"shape after dropping: {X.shape}")
 
 feature_cols = list(X.columns)
 
@@ -344,6 +345,8 @@ if Z['label'].value_counts()[1] < Z['label'].value_counts()[0]:
 
     s1  = Zp.loc[Zp['label'] == 1]
     s2  = Zp.loc[Zp['label'] == 0]
+    print(f"shape of label 1: {s1.shape}")
+    print(f"shape of label 0: {s2.shape}")
     assert(s1.shape == s2.shape)
     Z = Zp
 
@@ -416,7 +419,7 @@ for ii in [10]:
     #Predict the response for test dataset
     y_pred = clf.predict(X)
 
-    #find_path(clf, X, y, E)
+    find_path(clf, X, y, E)
 
 
     accuracy = metrics.accuracy_score(y, y_pred)

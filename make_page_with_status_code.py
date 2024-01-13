@@ -203,7 +203,7 @@ def make_page(config_path):
 
 if __name__ == '__main__':
     if len(sys.argv) != 3:
-        print "Error: command"
+        print("Error: command")
         sys.exit()
 
     global signature

@@ -3,9 +3,12 @@
 import sys
 import utils
 import re
+from analyzer.features import features as global_features
+import json
 
 
 signature = 0
+page_features = {}
 
 def append_meta_data(page, template):
     a = page.split("<!--")[1].split("-->")[0]
@@ -64,7 +67,7 @@ def append_meta_data_end(page, template):
     return c +  a
 
 
-def config_traverse(page, config, depth, quote_list, slash_list, parent_template):
+def config_traverse(page, config, depth, quote_list, slash_list, parent_template, features):
     global signature
     if "ID_VAR" in page:
         page = page.replace("ID_VAR", "GID_VARG")
@@ -81,7 +84,10 @@ def config_traverse(page, config, depth, quote_list, slash_list, parent_template
         for i in config['[HTML_RESOURCE]']+config['[JS_RESOURCE]']+config['[REPORT_API]']:
             if i in page:
                 index=page.find(i)+len(i)
-                print page[:index] + '?sign=%s' % signature + page[index:]
+                print(page[:index] + '?sign=%s' % signature + page[index:])
+                page_features[signature] = [
+                    global_features["page"].index(i) for i in features if i in global_features["page"]
+                ]
                 signature += 1
         return 0
 
@@ -93,6 +99,7 @@ def config_traverse(page, config, depth, quote_list, slash_list, parent_template
         idx_end_def = key.end(0)
         key = page[idx_start_def: idx_end_def]
         for template in config[key]:
+            new_features = features + [template]
             page_def = page
             idx_start = idx_start_def
             idx_end = idx_end_def
@@ -162,7 +169,7 @@ def config_traverse(page, config, depth, quote_list, slash_list, parent_template
                 inserted_page = "".join((page_def[:idx_start], template, page_def[idx_end:]))
                 #print inserted_page
                 inserted_page = append_meta_data(inserted_page, template)
-                config_traverse(inserted_page, config, depth + 1, new_quote_list, new_slash_list, original_template)
+                config_traverse(inserted_page, config, depth + 1, new_quote_list, new_slash_list, original_template, new_features)
 
                 template = template.replace(" nonce=123", "")
             inserted_page = "".join((page_def[:idx_start], template, page_def[idx_end:]))
@@ -170,12 +177,13 @@ def config_traverse(page, config, depth, quote_list, slash_list, parent_template
 
             inserted_page = append_meta_data(inserted_page, template)
 
-            config_traverse(inserted_page, config, depth + 1, new_quote_list, new_slash_list, original_template)
+            config_traverse(inserted_page, config, depth + 1, new_quote_list, new_slash_list, original_template, new_features)
 
 def make_page(config_path):
     config = utils.load_config(config_path)
 
     for template in config['[HTML]']:
+        features = [template]
         slash_list = ['</', '<\\/', '<\\\\/', '<\\\\\\\\/',  '<\\\\\\\\\\\\\\\\/', '<\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/']
         quote_list = ['"', "'", '`', r"\x22", r"\\\x27", r"\\\\\x60",  "\\\\\\\\\x22"]
         # quote escaping
@@ -190,10 +198,10 @@ def make_page(config_path):
         template = append_meta_data(template, template)
 
         if 'nonce=123' in template:
-            config_traverse(template, config, 1, quote_list, slash_list, template)
+            config_traverse(template, config, 1, quote_list, slash_list, template, features)
 
         template = template.replace(" nonce=123", "")
-        config_traverse(template, config, 1, quote_list, slash_list, template)
+        config_traverse(template, config, 1, quote_list, slash_list, template, features)
 
     #for key in config:
     #    print key, config[key]
@@ -201,9 +209,10 @@ def make_page(config_path):
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print "Error: command"
+        print("Error: command")
         sys.exit()
     config_path = sys.argv[1]
     make_page(config_path)
-
+    with open("page_features.json", "w") as f:
+        json.dump(page_features, f)
 

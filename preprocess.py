@@ -177,7 +177,7 @@ def preprocess(data_file, unit, output_dir):
     pended_csp = set()
     pended_hash = set()
 
-    TL = open("test_list.txt", mode="w")
+    TL = open("sampled_test_list.txt", mode="w")
 
     with open(data_file, mode="r") as f:
         for line in f:

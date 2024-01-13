@@ -1,7 +1,7 @@
 const fs = require("fs")
 csp_map = {}
 
-const csp_policies = fs.readFileSync(`../../testing_csp_list.txt`, {encoding:'utf8', flag:'r'}).split("\n")
+const csp_policies = fs.readFileSync(`../../sampled_testing_csp_list.txt`, {encoding:'utf8', flag:'r'}).split("\n")
 for(let i = 0; i < csp_policies.length-1; i++)
     csp_map[csp_policies[i].trim()] = i;
 

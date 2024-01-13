@@ -264,7 +264,7 @@ if __name__ == '__main__':
 	ap = argparse.ArgumentParser(description='Tester for Android devices')
 	ap.add_argument('-package_name', '--package_name', dest='package_name', type=str, required=True)
 	ap.add_argument('-start_csp', '--start_csp', dest='start_csp', type=int, required=True)
-	ap.add_argument('-csp_file', '--csp_file', dest='csp_file', default='testing_csp_list.txt', type=str)
+	ap.add_argument('-csp_file', '--csp_file', dest='csp_file', default='sampled_testing_csp_list.txt', type=str)
 	ap.add_argument('-config_file', '--config_file', dest='config_file', default='conf.json', type=str)
 	ap.add_argument('-num_devices', '--num_devices', dest='num_devices', type=int, default=0, required=False)
 	args = ap.parse_args()

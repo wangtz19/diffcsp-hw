@@ -1,0 +1,513 @@
+[
+  {
+    "idx": 0,
+    "test_case_id": 92477,
+    "csp": "default-src 'sha256-HASH' http://127.0.0.1:8080; script-src-attr *;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#92477 - executed: ['Chrome'], non-executed: ['Firefox', 'Safari']\n",
+    "test_page": "<!--Script--><iframe id=GGGXISNTGGG src=self.html></iframe><script nonce=123>GGGXISNTGGG.addEventListener(\"load\",()=>{GGGXISNTGGG.srcdoc=\"<script src=http://127.0.0.1:8080/allowed_http.js$$$?sign=92477 nonce=123><\\/script>\";},{once:true});</script>\n"
+  },
+  {
+    "idx": 1,
+    "test_case_id": 85,
+    "csp": "script-src-elem 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#85 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><script nonce=123>eval(\"w=window.open('about:blank'); w.document.write('<script src=http://127.0.0.1:8080/allowed_http.js$$$?sign=85 nonce=123><\\/script>');\")</script>\n"
+  },
+  {
+    "idx": 2,
+    "test_case_id": 92477,
+    "csp": "default-src 'sha256-HASH' http://127.0.0.1:8080; script-src-attr 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#92477 - executed: ['Chrome'], non-executed: ['Firefox', 'Safari']\n",
+    "test_page": "<!--Script--><iframe id=GGGXISNTGGG src=self.html></iframe><script nonce=123>GGGXISNTGGG.addEventListener(\"load\",()=>{GGGXISNTGGG.srcdoc=\"<script src=http://127.0.0.1:8080/allowed_http.js$$$?sign=92477 nonce=123><\\/script>\";},{once:true});</script>\n"
+  },
+  {
+    "idx": 3,
+    "test_case_id": 21940,
+    "csp": "script-src-elem 'nonce-123' 'self' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#21940 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><iframe srcdoc=\"<details ontoggle='w=window.open(`about:blank`); w.document.write(`<script src=http://127.0.0.1:8082/blocked_http.js$$$?sign=21940 nonce=123><\\/script>`);' open>test</details>\"></iframe>\n"
+  },
+  {
+    "idx": 4,
+    "test_case_id": 113225,
+    "csp": "script-src-attr;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#113225 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><iframe id=GGGGGRflDuGGGGG src=self.html></iframe><script>GGGGGRflDuGGGGG.onload=_=>GGGGGRflDuGGGGG.contentWindow.eval(\"w=window.open('about:blank'); w.document.write('<audio controls ondurationchange=\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8082/blocked_http.js$$$?sign=113225`;o.nonce=123;document.body.appendChild(o);void(0);\\x22><source src=self.mp3 type=audio/mpeg><\\/audio>');\");GGGGGRflDuGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 5,
+    "test_case_id": 21199,
+    "csp": "default-src *; script-src 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#21199 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><iframe srcdoc=\"<iframe id=GGGGSkoakGGGG src=self.html></iframe><script nonce=123>GGGGSkoakGGGG.onload=_=>GGGGSkoakGGGG.contentWindow.eval('w=window.open(`about:blank`); w.document.write(`<script src=http://127.0.0.1:8000/self.js$$$?sign=21199><\\/script>`);');GGGGSkoakGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 6,
+    "test_case_id": 21298,
+    "csp": "default-src *; script-src 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#21298 - executed: ['Firefox'], non-executed: ['Chrome', 'Safari']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGupdGEGGG src=about:blank></iframe><script nonce=123>GGGupdGEGGG.onload=_=>GGGupdGEGGG.contentWindow.eval('fetch(`http://127.0.0.1:8000/script_receive$$$?sign=21298`)');GGGupdGEGGG.src='self.html';GGGupdGEGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 7,
+    "test_case_id": 28061,
+    "csp": "script-src-elem 'nonce-123' 'self' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#28061 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><iframe onload=\"w=window.open('about:blank'); w.document.write('<iframe id=GGGmNdwHGGG src=self.html><\\/iframe><script nonce=123>GGGmNdwHGGG.onload=_=>GGGmNdwHGGG.contentWindow.eval(\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8080/allowed_http.js$$$?sign=28061`;document.body.appendChild(o);void(0);\\x22);GGGmNdwHGGG.contentWindow.location.reload();<\\/script>');\"></iframe>\n"
+  },
+  {
+    "idx": 8,
+    "test_case_id": 113225,
+    "csp": "script-src-attr 'nonce-123' 'self' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#113225 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><iframe id=GGGGGRflDuGGGGG src=self.html></iframe><script>GGGGGRflDuGGGGG.onload=_=>GGGGGRflDuGGGGG.contentWindow.eval(\"w=window.open('about:blank'); w.document.write('<audio controls ondurationchange=\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8082/blocked_http.js$$$?sign=113225`;o.nonce=123;document.body.appendChild(o);void(0);\\x22><source src=self.mp3 type=audio/mpeg><\\/audio>');\");GGGGGRflDuGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 9,
+    "test_case_id": 112347,
+    "csp": "script-src-attr 'sha256-HASH' http://127.0.0.1:8080 'unsafe-hashes';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#112347 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><iframe id=GGGGGAvbOGGGGGG src=self.html></iframe><script nonce=123>GGGGGAvbOGGGGGG.onload=_=>GGGGGAvbOGGGGGG.contentWindow.eval(\"w=window.open('about:blank'); w.document.write('<iframe id=GGGAvbOGGGG src=about:blank><\\/iframe><script nonce=123>GGGAvbOGGGG.onload=_=>GGGAvbOGGGG.contentWindow.eval(\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8000/self.js$$$?sign=112347`;o.nonce=123;document.body.appendChild(o);void(0);\\x22);GGGAvbOGGGG.contentWindow.location.reload();<\\/script>');\");GGGGGAvbOGGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 10,
+    "test_case_id": 21199,
+    "csp": "script-src-elem 'sha256-HASH' http://127.0.0.1:8080 'unsafe-hashes';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#21199 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><iframe srcdoc=\"<iframe id=GGGGSkoakGGGG src=self.html></iframe><script nonce=123>GGGGSkoakGGGG.onload=_=>GGGGSkoakGGGG.contentWindow.eval('w=window.open(`about:blank`); w.document.write(`<script src=http://127.0.0.1:8000/self.js$$$?sign=21199><\\/script>`);');GGGGSkoakGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 11,
+    "test_case_id": 113225,
+    "csp": "script-src-elem 'sha256-HASH' http://127.0.0.1:8080 'unsafe-hashes';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#113225 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><iframe id=GGGGGRflDuGGGGG src=self.html></iframe><script>GGGGGRflDuGGGGG.onload=_=>GGGGGRflDuGGGGG.contentWindow.eval(\"w=window.open('about:blank'); w.document.write('<audio controls ondurationchange=\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8082/blocked_http.js$$$?sign=113225`;o.nonce=123;document.body.appendChild(o);void(0);\\x22><source src=self.mp3 type=audio/mpeg><\\/audio>');\");GGGGGRflDuGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 12,
+    "test_case_id": 21199,
+    "csp": "script-src 'sha256-HASH' http://127.0.0.1:8080; script-src-attr 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#21199 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><iframe srcdoc=\"<iframe id=GGGGSkoakGGGG src=self.html></iframe><script nonce=123>GGGGSkoakGGGG.onload=_=>GGGGSkoakGGGG.contentWindow.eval('w=window.open(`about:blank`); w.document.write(`<script src=http://127.0.0.1:8000/self.js$$$?sign=21199><\\/script>`);');GGGGSkoakGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 13,
+    "test_case_id": 21199,
+    "csp": "default-src http://127.0.0.1:8080 http://127.0.0.1:8000; script-src 'sha256-HASH' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#21199 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><iframe srcdoc=\"<iframe id=GGGGSkoakGGGG src=self.html></iframe><script nonce=123>GGGGSkoakGGGG.onload=_=>GGGGSkoakGGGG.contentWindow.eval('w=window.open(`about:blank`); w.document.write(`<script src=http://127.0.0.1:8000/self.js$$$?sign=21199><\\/script>`);');GGGGSkoakGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 14,
+    "test_case_id": 21298,
+    "csp": "default-src http://127.0.0.1:8080 http://127.0.0.1:8000; script-src 'sha256-HASH' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#21298 - executed: ['Firefox'], non-executed: ['Chrome', 'Safari']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGupdGEGGG src=about:blank></iframe><script nonce=123>GGGupdGEGGG.onload=_=>GGGupdGEGGG.contentWindow.eval('fetch(`http://127.0.0.1:8000/script_receive$$$?sign=21298`)');GGGupdGEGGG.src='self.html';GGGupdGEGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 15,
+    "test_case_id": 111458,
+    "csp": "script-src-elem 'sha256-HASH' http://127.0.0.1:8080 'unsafe-hashes';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#111458 - executed: ['Chrome', 'Firefox'], non-executed: ['Safari']\n",
+    "test_page": "<!--Script,location--><iframe id=GGGGGpOeqEGGGGG src=self.html></iframe><script nonce=123>GGGGGpOeqEGGGGG.onload=_=>GGGGGpOeqEGGGGG.contentWindow.eval(\"location='javascript:var o=document.createElement(`script`);o.src=`http://127.0.0.1:8000/self.js$$$?sign=111458`;document.body.appendChild(o);void(0);'\");GGGGGpOeqEGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 16,
+    "test_case_id": 90130,
+    "csp": "script-src-attr;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#90130 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--location.href,Script--><iframe id=GGGGGRBKuXGGGGG src=self.html></iframe><script nonce=123>GGGGGRBKuXGGGGG.addEventListener(\"load\",()=>{GGGGGRBKuXGGGGG.contentWindow.location.href=\"javascript:'<audio oncanplay=\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8000/self.js$$$?sign=90130`;document.body.appendChild(o);void(0);\\x22><source src=self.mp3 type=audio/mpeg><\\/audio>'\";},{once:true});</script>\n"
+  },
+  {
+    "idx": 17,
+    "test_case_id": 90130,
+    "csp": "script-src-attr 'nonce-123' 'self' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#90130 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--location.href,Script--><iframe id=GGGGGRBKuXGGGGG src=self.html></iframe><script nonce=123>GGGGGRBKuXGGGGG.addEventListener(\"load\",()=>{GGGGGRBKuXGGGGG.contentWindow.location.href=\"javascript:'<audio oncanplay=\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8000/self.js$$$?sign=90130`;document.body.appendChild(o);void(0);\\x22><source src=self.mp3 type=audio/mpeg><\\/audio>'\";},{once:true});</script>\n"
+  },
+  {
+    "idx": 18,
+    "test_case_id": 111458,
+    "csp": "default-src *; script-src 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#111458 - executed: ['Chrome', 'Firefox'], non-executed: ['Safari']\n",
+    "test_page": "<!--Script,location--><iframe id=GGGGGpOeqEGGGGG src=self.html></iframe><script nonce=123>GGGGGpOeqEGGGGG.onload=_=>GGGGGpOeqEGGGGG.contentWindow.eval(\"location='javascript:var o=document.createElement(`script`);o.src=`http://127.0.0.1:8000/self.js$$$?sign=111458`;document.body.appendChild(o);void(0);'\");GGGGGpOeqEGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 19,
+    "test_case_id": 20401,
+    "csp": "default-src http://127.0.0.1:8080 'unsafe-inline'; script-src 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#20401 - executed: ['Chrome'], non-executed: ['Firefox', 'Safari']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGcHdqKGGGG src=self.html></iframe><script nonce=123>GGGGcHdqKGGGG.addEventListener('load',()=>{GGGGcHdqKGGGG.srcdoc='<iframe id=GGGcHdqKGGG src=about:blank><\\/iframe><script nonce=123>GGGcHdqKGGG.onload=_=>GGGcHdqKGGG.contentDocument.write(\\x22<script src=http://127.0.0.1:8082/blocked_http.js$$$?sign=20401 nonce=123><\\\\/script>\\x22);GGGcHdqKGGG.contentWindow.location.reload();<\\/script>';},{once:true});</script>\"></iframe>\n"
+  },
+  {
+    "idx": 20,
+    "test_case_id": 20521,
+    "csp": "default-src 'strict-dynamic' http://127.0.0.1:8080; script-src http://127.0.0.1:8080 'unsafe-inline';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#20521 - executed: ['Chrome'], non-executed: ['Firefox', 'Safari']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGqxQIeGGGG src=self.html></iframe><script nonce=123>GGGGqxQIeGGGG.addEventListener('load',()=>{GGGGqxQIeGGGG.srcdoc='<details ontoggle=\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8080/allowed_http.js$$$?sign=20521`;document.body.appendChild(o);void(0);\\x22 open>test<\\/details>';},{once:true});</script>\"></iframe>\n"
+  },
+  {
+    "idx": 21,
+    "test_case_id": 44122,
+    "csp": "script-src http://127.0.0.1:8080 'unsafe-inline'; script-src-attr 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#44122 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGqriUmGGGGG src=about:blank></iframe><script nonce=123>GGGGGqriUmGGGGG.onload=_=>GGGGGqriUmGGGGG.contentDocument.write(\"<iframe id=GGGGqriUmGGGG src=self.html><\\/iframe><script nonce=123>GGGGqriUmGGGG.addEventListener('load',()=>{GGGGqriUmGGGG.src='javascript:`<script src=http://127.0.0.1:8000/self.js$$$?sign=44122><\\\\/script>`';},{once:true});<\\/script>\");GGGGGqriUmGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 22,
+    "test_case_id": 102364,
+    "csp": "script-src-attr http://127.0.0.1:8080 'unsafe-inline'; script-src-elem http://127.0.0.1:8080 'unsafe-inline';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#102364 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--location.href,Script--><iframe id=GGGGGWGyIYGGGGG src=self.html></iframe><script>GGGGGWGyIYGGGGG.addEventListener(\"load\",()=>{GGGGGWGyIYGGGGG.srcdoc=\"<iframe id=GGGGWGyIYGGGG src=self.html><\\/iframe><script nonce=123>GGGGWGyIYGGGG.addEventListener('load',()=>{GGGGWGyIYGGGG.contentWindow.location.href='javascript:`<script src=http://127.0.0.1:8082/blocked_http.js$$$?sign=102364><\\\\/script>`';},{once:true});<\\/script>\";},{once:true});</script>\n"
+  },
+  {
+    "idx": 23,
+    "test_case_id": 21199,
+    "csp": "script-src-attr http://127.0.0.1:8080 'unsafe-inline'; script-src-elem http://127.0.0.1:8080 'unsafe-inline';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#21199 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><iframe srcdoc=\"<iframe id=GGGGSkoakGGGG src=self.html></iframe><script nonce=123>GGGGSkoakGGGG.onload=_=>GGGGSkoakGGGG.contentWindow.eval('w=window.open(`about:blank`); w.document.write(`<script src=http://127.0.0.1:8000/self.js$$$?sign=21199><\\/script>`);');GGGGSkoakGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 24,
+    "test_case_id": 18392,
+    "csp": "script-src-attr http://127.0.0.1:8080 'unsafe-inline'; script-src-elem http://127.0.0.1:8080 'unsafe-inline';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#18392 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGRXhGJGGGG src=about:blank></iframe><script>GGGGRXhGJGGGG.onload=_=>GGGGRXhGJGGGG.contentDocument.write('<iframe id=GGGRXhGJGGG src=self.html><\\/iframe><script nonce=123>GGGRXhGJGGG.onload=_=>GGGRXhGJGGG.contentWindow.eval(\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8000/self.js$$$?sign=18392`;o.nonce=123;document.body.appendChild(o);void(0);\\x22);GGGRXhGJGGG.contentWindow.location.reload();<\\/script>');GGGGRXhGJGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 25,
+    "test_case_id": 11176,
+    "csp": "script-src-attr http://127.0.0.1:8080 'unsafe-inline'; script-src-elem http://127.0.0.1:8080 'unsafe-inline';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#11176 - executed: ['Firefox'], non-executed: ['Chrome', 'Safari']\n",
+    "test_page": "<!--Script--><li id=GGGGGWTrgwGGGGG></li><script>GGGGGWTrgwGGGGG.innerHTML+=\"<iframe srcdoc='<iframe id=GGGWTrgwGGG src=about:blank><\\/iframe><script>GGGWTrgwGGG.onload=_=>GGGWTrgwGGG.contentWindow.eval(\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8082/blocked_http.js$$$?sign=11176`;document.body.appendChild(o);void(0);\\x22);GGGWTrgwGGG.src=\\x22self.html\\x22;GGGWTrgwGGG.contentWindow.location.reload();<\\/script>'><\\/iframe>\"</script>\n"
+  },
+  {
+    "idx": 26,
+    "test_case_id": 2193,
+    "csp": "script-src http://127.0.0.1:8080 'unsafe-inline'; script-src-attr 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#2193 - executed: ['Firefox'], non-executed: ['Chrome', 'Safari']\n",
+    "test_page": "<!--Script--><iframe src=\"javascript:'<iframe id=GGGgMdssGGG src=about:blank><\\/iframe><script>GGGgMdssGGG.onload=_=>GGGgMdssGGG.contentWindow.eval(\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8080/allowed_http.js$$$?sign=2193`;document.body.appendChild(o);void(0);\\x22);GGGgMdssGGG.src=\\x22self.html\\x22;GGGgMdssGGG.contentWindow.location.reload();<\\/script>'\"></iframe>\n"
+  },
+  {
+    "idx": 27,
+    "test_case_id": 92477,
+    "csp": "default-src 'none'; script-src-elem http://127.0.0.1:8080 'unsafe-inline';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#92477 - executed: ['Chrome'], non-executed: ['Firefox', 'Safari']\n",
+    "test_page": "<!--Script--><iframe id=GGGXISNTGGG src=self.html></iframe><script nonce=123>GGGXISNTGGG.addEventListener(\"load\",()=>{GGGXISNTGGG.srcdoc=\"<script src=http://127.0.0.1:8080/allowed_http.js$$$?sign=92477 nonce=123><\\/script>\";},{once:true});</script>\n"
+  },
+  {
+    "idx": 28,
+    "test_case_id": 29022,
+    "csp": "default-src 'none'; script-src-elem http://127.0.0.1:8080 'unsafe-inline';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#29022 - executed: ['Chrome', 'Firefox'], non-executed: ['Safari']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGqcdRHGGGGG src=about:blank></iframe><script nonce=123>GGGGGqcdRHGGGGG.onload=_=>GGGGGqcdRHGGGGG.contentDocument.body.innerHTML+=\"<iframe srcdoc='<iframe id=GGGqcdRHGGG src=self.html><\\/iframe><script>GGGqcdRHGGG.addEventListener(\\x22load\\x22,()=>{GGGqcdRHGGG.srcdoc=\\x22<script src=http://127.0.0.1:8080/allowed_http.js$$$?sign=29022><\\\\/script>\\x22;},{once:true});<\\/script>'><\\/iframe>\";GGGGGqcdRHGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 29,
+    "test_case_id": 97065,
+    "csp": "default-src 'none'; script-src-elem http://127.0.0.1:8080 'unsafe-inline';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#97065 - executed: ['Chrome'], non-executed: ['Firefox', 'Safari']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGOTdOmGGGGG src=self.html></iframe><script nonce=123>GGGGGOTdOmGGGGG.addEventListener(\"load\",()=>{GGGGGOTdOmGGGGG.srcdoc=\"<svg xmlns:svg=http://www.w3.org/2000/svg xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink><script nonce=123>fetch('http://127.0.0.1:8000/script_receive$$$?sign=97065')<\\/script><\\/svg>\";},{once:true});</script>\n"
+  },
+  {
+    "idx": 30,
+    "test_case_id": 1629,
+    "csp": "script-src-attr 'sha256-HASH' http://127.0.0.1:8080 'unsafe-hashes';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#1629 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><script>w=window.open(\"self.js\"); w.document.write(\"<iframe id=GGGfSVtgGGG src=about:blank><\\/iframe><script nonce=123>GGGfSVtgGGG.onload=_=>GGGfSVtgGGG.contentWindow.eval('var o=document.createElement(`script`);o.src=`http://127.0.0.1:8000/self.js$$$?sign=1629`;document.body.appendChild(o);void(0);');GGGfSVtgGGG.src='self.html';GGGfSVtgGGG.contentWindow.location.reload();<\\/script>\");</script>\n"
+  },
+  {
+    "idx": 31,
+    "test_case_id": 25047,
+    "csp": "script-src-attr 'sha256-HASH' http://127.0.0.1:8080 'unsafe-hashes';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#25047 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><audio controls ondurationchange=\"w=window.open('about:blank'); w.document.write('<iframe id=GGGdurJSGGG src=self.html><\\/iframe><script>GGGdurJSGGG.onload=_=>GGGdurJSGGG.contentDocument.write(\\x22<script src=http://127.0.0.1:8000/self.js$$$?sign=25047 nonce=123><\\\\/script>\\x22);GGGdurJSGGG.contentWindow.location.reload();<\\/script>');\"><source src=self.mp3 type=audio/mpeg></audio>\n"
+  },
+  {
+    "idx": 32,
+    "test_case_id": 20016,
+    "csp": "script-src-attr;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#20016 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGfhftmGGGG src=self.html></iframe><script>GGGGfhftmGGGG.onload=_=>GGGGfhftmGGGG.contentDocument.write('<audio src/onerror=\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8000/self.js$$$?sign=20016`;document.body.appendChild(o);void(0);\\x22><\\/audio>');GGGGfhftmGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 33,
+    "test_case_id": 645,
+    "csp": "script-src-elem 'sha256-HASH' http://127.0.0.1:8080 'unsafe-hashes';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#645 - executed: ['Firefox'], non-executed: ['Chrome', 'Safari']\n",
+    "test_page": "<!--window.open,Script--><script nonce=123>w=window.open(\"self.js\"); w.document.write(\"<iframe id=GGGUCYrIGGG src=about:blank><\\/iframe><script>GGGUCYrIGGG.onload=_=>GGGUCYrIGGG.contentWindow.eval('var o=document.createElement(`script`);o.src=`http://127.0.0.1:8082/blocked_http.js$$$?sign=645`;o.nonce=123;document.body.appendChild(o);void(0);');GGGUCYrIGGG.src='self.html';GGGUCYrIGGG.contentWindow.location.reload();<\\/script>\");</script>\n"
+  },
+  {
+    "idx": 34,
+    "test_case_id": 18092,
+    "csp": "script-src-attr http://127.0.0.1:8080 'unsafe-inline'; script-src-elem http://127.0.0.1:8080 'unsafe-inline';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#18092 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGSYQvyGGGG src=about:blank></iframe><script nonce=123>GGGGSYQvyGGGG.onload=_=>GGGGSYQvyGGGG.contentDocument.write('<iframe id=GGGSYQvyGGG src=self.html><\\/iframe><script>GGGSYQvyGGG.onload=_=>GGGSYQvyGGG.contentDocument.write(\\x22<script src=http://127.0.0.1:8000/self.js$$$?sign=18092><\\\\/script>\\x22);GGGSYQvyGGG.contentWindow.location.reload();<\\/script>');GGGGSYQvyGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 35,
+    "test_case_id": 645,
+    "csp": "script-src-attr http://127.0.0.1:8080 'unsafe-inline'; script-src-elem http://127.0.0.1:8080 'unsafe-inline';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#645 - executed: ['Firefox'], non-executed: ['Chrome', 'Safari']\n",
+    "test_page": "<!--window.open,Script--><script nonce=123>w=window.open(\"self.js\"); w.document.write(\"<iframe id=GGGUCYrIGGG src=about:blank><\\/iframe><script>GGGUCYrIGGG.onload=_=>GGGUCYrIGGG.contentWindow.eval('var o=document.createElement(`script`);o.src=`http://127.0.0.1:8082/blocked_http.js$$$?sign=645`;o.nonce=123;document.body.appendChild(o);void(0);');GGGUCYrIGGG.src='self.html';GGGUCYrIGGG.contentWindow.location.reload();<\\/script>\");</script>\n"
+  },
+  {
+    "idx": 36,
+    "test_case_id": 19814,
+    "csp": "script-src 'sha256-HASH' http://127.0.0.1:8080; script-src-attr 'unsafe-eval' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#19814 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGSHLUOGGGG src=self.html></iframe><script nonce=123>GGGGSHLUOGGGG.onload=_=>GGGGSHLUOGGGG.contentDocument.write('<iframe id=GGGSHLUOGGG src=self.html><\\/iframe><script nonce=123>GGGSHLUOGGG.onload=_=>GGGSHLUOGGG.contentDocument.write(\\x22<script src=http://127.0.0.1:8082/blocked_http.js$$$?sign=19814><\\\\/script>\\x22);GGGSHLUOGGG.contentWindow.location.reload();<\\/script>');GGGGSHLUOGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 37,
+    "test_case_id": 78359,
+    "csp": "script-src 'sha256-HASH' http://127.0.0.1:8080; script-src-attr 'unsafe-eval' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#78359 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGdToKSGGGGG src=self.html></iframe><script nonce=123>GGGGGdToKSGGGGG.onload=_=>GGGGGdToKSGGGGG.contentDocument.write(\"<li id=GGGGdToKSGGGG><\\/li><script nonce=123>GGGGdToKSGGGG.innerHTML+='<audio oncanplay=\\x22fetch(`http://127.0.0.1:8000/script_receive$$$?sign=78359`)\\x22><source src=self.mp3 type=audio/mpeg><\\\\/audio>'<\\/script>\");GGGGGdToKSGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 38,
+    "test_case_id": 645,
+    "csp": "script-src 'sha256-HASH' http://127.0.0.1:8080; script-src-attr 'unsafe-eval' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#645 - executed: ['Firefox'], non-executed: ['Chrome', 'Safari']\n",
+    "test_page": "<!--window.open,Script--><script nonce=123>w=window.open(\"self.js\"); w.document.write(\"<iframe id=GGGUCYrIGGG src=about:blank><\\/iframe><script>GGGUCYrIGGG.onload=_=>GGGUCYrIGGG.contentWindow.eval('var o=document.createElement(`script`);o.src=`http://127.0.0.1:8082/blocked_http.js$$$?sign=645`;o.nonce=123;document.body.appendChild(o);void(0);');GGGUCYrIGGG.src='self.html';GGGUCYrIGGG.contentWindow.location.reload();<\\/script>\");</script>\n"
+  },
+  {
+    "idx": 39,
+    "test_case_id": 78967,
+    "csp": "script-src *; script-src-elem 'sha256-HASH' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#78967 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGJWszJGGGGG src=self.html></iframe><script nonce=123>GGGGGJWszJGGGGG.onload=_=>GGGGGJWszJGGGGG.contentDocument.write(\"<iframe srcdoc='<iframe id=GGGJWszJGGG src=about:blank><\\/iframe><script>GGGJWszJGGG.onload=_=>GGGJWszJGGG.contentDocument.write(\\x22<script src=http://127.0.0.1:8082/blocked_http.js$$$?sign=78967><\\\\/script>\\x22);GGGJWszJGGG.contentWindow.location.reload();<\\/script>'><\\/iframe>\");GGGGGJWszJGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 40,
+    "test_case_id": 78967,
+    "csp": "script-src 'sha256-HASH' http://127.0.0.1:8080; script-src-attr 'unsafe-eval' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#78967 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGJWszJGGGGG src=self.html></iframe><script nonce=123>GGGGGJWszJGGGGG.onload=_=>GGGGGJWszJGGGGG.contentDocument.write(\"<iframe srcdoc='<iframe id=GGGJWszJGGG src=about:blank><\\/iframe><script>GGGJWszJGGG.onload=_=>GGGJWszJGGG.contentDocument.write(\\x22<script src=http://127.0.0.1:8082/blocked_http.js$$$?sign=78967><\\\\/script>\\x22);GGGJWszJGGG.contentWindow.location.reload();<\\/script>'><\\/iframe>\");GGGGGJWszJGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 41,
+    "test_case_id": 80056,
+    "csp": "script-src 'sha256-HASH' http://127.0.0.1:8080; script-src-attr 'unsafe-eval' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#80056 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGoafzdGGGGG src=self.html></iframe><script nonce=123>GGGGGoafzdGGGGG.onload=_=>GGGGGoafzdGGGGG.contentDocument.write(\"<iframe id=GGGGoafzdGGGG src=about:blank><\\/iframe><script nonce=123>GGGGoafzdGGGG.onload=_=>GGGGoafzdGGGG.contentDocument.write('<iframe id=GGGoafzdGGG src=about:blank><\\\\/iframe><script nonce=123>GGGoafzdGGG.onload=_=>GGGoafzdGGG.contentWindow.eval(\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8082/blocked_http.js$$$?sign=80056`;document.body.appendChild(o);void(0);\\x22);GGGoafzdGGG.contentWindow.location.reload();<\\\\/script>');GGGGoafzdGGGG.contentWindow.location.reload();<\\/script>\");GGGGGoafzdGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 42,
+    "test_case_id": 18092,
+    "csp": "script-src http://127.0.0.1:8080 'unsafe-inline'; script-src-attr 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#18092 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGSYQvyGGGG src=about:blank></iframe><script nonce=123>GGGGSYQvyGGGG.onload=_=>GGGGSYQvyGGGG.contentDocument.write('<iframe id=GGGSYQvyGGG src=self.html><\\/iframe><script>GGGSYQvyGGG.onload=_=>GGGSYQvyGGG.contentDocument.write(\\x22<script src=http://127.0.0.1:8000/self.js$$$?sign=18092><\\\\/script>\\x22);GGGSYQvyGGG.contentWindow.location.reload();<\\/script>');GGGGSYQvyGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 43,
+    "test_case_id": 49936,
+    "csp": "script-src http://127.0.0.1:8080 'unsafe-inline'; script-src-attr 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#49936 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGNllSfGGGGG src=about:blank></iframe><script>GGGGGNllSfGGGGG.onload=_=>GGGGGNllSfGGGGG.contentDocument.write(\"<iframe id=GGGGNllSfGGGG src=self.html><\\/iframe><script>GGGGNllSfGGGG.onload=_=>GGGGNllSfGGGG.contentDocument.write('<iframe id=GGGNllSfGGG src=about:blank><\\\\/iframe><script nonce=123>GGGNllSfGGG.onload=_=>GGGNllSfGGG.contentWindow.eval(\\x22fetch(`http://127.0.0.1:8000/script_receive$$$?sign=49936`)\\x22);GGGNllSfGGG.contentWindow.location.reload();<\\\\/script>');GGGGNllSfGGGG.contentWindow.location.reload();<\\/script>\");GGGGGNllSfGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 44,
+    "test_case_id": 645,
+    "csp": "script-src 'sha256-HASH' http://127.0.0.1:8080; script-src-attr 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#645 - executed: ['Firefox'], non-executed: ['Chrome', 'Safari']\n",
+    "test_page": "<!--window.open,Script--><script nonce=123>w=window.open(\"self.js\"); w.document.write(\"<iframe id=GGGUCYrIGGG src=about:blank><\\/iframe><script>GGGUCYrIGGG.onload=_=>GGGUCYrIGGG.contentWindow.eval('var o=document.createElement(`script`);o.src=`http://127.0.0.1:8082/blocked_http.js$$$?sign=645`;o.nonce=123;document.body.appendChild(o);void(0);');GGGUCYrIGGG.src='self.html';GGGUCYrIGGG.contentWindow.location.reload();<\\/script>\");</script>\n"
+  },
+  {
+    "idx": 45,
+    "test_case_id": 20016,
+    "csp": "script-src-attr 'nonce-123' 'self' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#20016 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGfhftmGGGG src=self.html></iframe><script>GGGGfhftmGGGG.onload=_=>GGGGfhftmGGGG.contentDocument.write('<audio src/onerror=\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8000/self.js$$$?sign=20016`;document.body.appendChild(o);void(0);\\x22><\\/audio>');GGGGfhftmGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 46,
+    "test_case_id": 20016,
+    "csp": "script-src-attr 'sha256-HASH' 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#20016 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGfhftmGGGG src=self.html></iframe><script>GGGGfhftmGGGG.onload=_=>GGGGfhftmGGGG.contentDocument.write('<audio src/onerror=\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8000/self.js$$$?sign=20016`;document.body.appendChild(o);void(0);\\x22><\\/audio>');GGGGfhftmGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 47,
+    "test_case_id": 112115,
+    "csp": "script-src-attr 'none' 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#112115 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><iframe id=GGGGGxcgkYGGGGG src=self.html></iframe><script nonce=123>GGGGGxcgkYGGGGG.onload=_=>GGGGGxcgkYGGGGG.contentWindow.eval(\"w=window.open('self.js'); w.document.write('<input id=GGGxcgkYGGG onchange=\\x22fetch(`http://127.0.0.1:8000/script_receive$$$?sign=112115`)\\x22 value=xss><\\/input><script nonce=123>var event = new Event(\\x22change\\x22);GGGxcgkYGGG.dispatchEvent(event);<\\/script>');\");GGGGGxcgkYGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 48,
+    "test_case_id": 112115,
+    "csp": "script-src-attr 'nonce-123' 'self' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#112115 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><iframe id=GGGGGxcgkYGGGGG src=self.html></iframe><script nonce=123>GGGGGxcgkYGGGGG.onload=_=>GGGGGxcgkYGGGGG.contentWindow.eval(\"w=window.open('self.js'); w.document.write('<input id=GGGxcgkYGGG onchange=\\x22fetch(`http://127.0.0.1:8000/script_receive$$$?sign=112115`)\\x22 value=xss><\\/input><script nonce=123>var event = new Event(\\x22change\\x22);GGGxcgkYGGG.dispatchEvent(event);<\\/script>');\");GGGGGxcgkYGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 49,
+    "test_case_id": 43868,
+    "csp": "script-src http://127.0.0.1:8080 'unsafe-inline'; script-src-attr 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#43868 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGkDMEMGGGGG src=about:blank></iframe><script nonce=123>GGGGGkDMEMGGGGG.onload=_=>GGGGGkDMEMGGGGG.contentDocument.write(\"<iframe id=GGGGkDMEMGGGG src=self.html><\\/iframe><script>GGGGkDMEMGGGG.onload=_=>GGGGkDMEMGGGG.contentDocument.write('<audio src/onerror=\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8082/blocked_http.js$$$?sign=43868`;document.body.appendChild(o);void(0);\\x22><\\\\/audio>');GGGGkDMEMGGGG.contentWindow.location.reload();<\\/script>\");GGGGGkDMEMGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 50,
+    "test_case_id": 20016,
+    "csp": "script-src 'sha256-HASH' http://127.0.0.1:8080; script-src-attr 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#20016 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGfhftmGGGG src=self.html></iframe><script>GGGGfhftmGGGG.onload=_=>GGGGfhftmGGGG.contentDocument.write('<audio src/onerror=\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8000/self.js$$$?sign=20016`;document.body.appendChild(o);void(0);\\x22><\\/audio>');GGGGfhftmGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 51,
+    "test_case_id": 19688,
+    "csp": "script-src-attr http://127.0.0.1:8080 http://127.0.0.1:8000; script-src-elem 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#19688 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGMaoPzGGGG src=self.html></iframe><script nonce=123>GGGGMaoPzGGGG.onload=_=>GGGGMaoPzGGGG.contentDocument.write('<script>fetch(`http://127.0.0.1:8000/script_receive$$$?sign=19688`)<\\/script>');GGGGMaoPzGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 52,
+    "test_case_id": 19849,
+    "csp": "script-src-attr http://127.0.0.1:8080 http://127.0.0.1:8000; script-src-elem 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#19849 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGKSQLGGGGG src=self.html></iframe><script nonce=123>GGGGKSQLGGGGG.onload=_=>GGGGKSQLGGGGG.contentDocument.write('<iframe id=GGGKSQLGGGG src=self.html><\\/iframe><script>GGGKSQLGGGG.onload=_=>GGGKSQLGGGG.contentWindow.eval(\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8082/blocked_http.js$$$?sign=19849`;document.body.appendChild(o);void(0);\\x22);GGGKSQLGGGG.contentWindow.location.reload();<\\/script>');GGGGKSQLGGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 53,
+    "test_case_id": 78370,
+    "csp": "script-src-attr http://127.0.0.1:8080 http://127.0.0.1:8000; script-src-elem 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#78370 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGnyZwzGGGGG src=self.html></iframe><script nonce=123>GGGGGnyZwzGGGGG.onload=_=>GGGGGnyZwzGGGGG.contentDocument.write(\"<li id=GGGGnyZwzGGGG><\\/li><script nonce=123>GGGGnyZwzGGGG.innerHTML+='<audio controls ondurationchange=\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8000/self.js$$$?sign=78370`;o.nonce=123;document.body.appendChild(o);void(0);\\x22><source src=self.mp3 type=audio/mpeg><\\\\/audio>'<\\/script>\");GGGGGnyZwzGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 54,
+    "test_case_id": 82157,
+    "csp": "script-src-attr http://127.0.0.1:8080 http://127.0.0.1:8000; script-src-elem 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#82157 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--location.href,Script--><iframe id=GGGGGYbIvsGGGGG src=self.html></iframe><script nonce=123>GGGGGYbIvsGGGGG.onload=_=>GGGGGYbIvsGGGGG.contentDocument.write(\"<iframe id=GGGGYbIvsGGGG src=self.html><\\/iframe><script nonce=123>GGGGYbIvsGGGG.addEventListener('load',()=>{GGGGYbIvsGGGG.contentWindow.location.href='javascript:`<script src=http://127.0.0.1:8000/self.js$$$?sign=82157 nonce=123><\\\\/script>`';},{once:true});<\\/script>\");GGGGGYbIvsGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 55,
+    "test_case_id": 19688,
+    "csp": "script-src-elem 'nonce-123' 'self' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#19688 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGMaoPzGGGG src=self.html></iframe><script nonce=123>GGGGMaoPzGGGG.onload=_=>GGGGMaoPzGGGG.contentDocument.write('<script>fetch(`http://127.0.0.1:8000/script_receive$$$?sign=19688`)<\\/script>');GGGGMaoPzGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 56,
+    "test_case_id": 24829,
+    "csp": "script-src-elem 'nonce-123' 'self' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#24829 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--window.open,Script--><audio controls ondurationchange=\"w=window.open('self.js'); w.document.write('<iframe id=GGGnFxpoGGG src=about:blank><\\/iframe><script nonce=123>GGGnFxpoGGG.onload=_=>GGGnFxpoGGG.contentWindow.eval(\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8080/allowed_http.js$$$?sign=24829`;o.nonce=123;document.body.appendChild(o);void(0);\\x22);GGGnFxpoGGG.src=\\x22self.html\\x22;GGGnFxpoGGG.contentWindow.location.reload();<\\/script>');\"><source src=self.mp3 type=audio/mpeg></audio>\n"
+  },
+  {
+    "idx": 57,
+    "test_case_id": 29003,
+    "csp": "script-src-elem 'nonce-123' 'self' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#29003 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGCsQMrGGGGG src=about:blank></iframe><script nonce=123>GGGGGCsQMrGGGGG.onload=_=>GGGGGCsQMrGGGGG.contentDocument.body.innerHTML+=\"<iframe srcdoc='<iframe id=GGGCsQMrGGG src=self.html><\\/iframe><script nonce=123>GGGCsQMrGGG.onload=_=>GGGCsQMrGGG.contentDocument.write(\\x22<script src=http://127.0.0.1:8000/self.js$$$?sign=29003><\\\\/script>\\x22);GGGCsQMrGGG.contentWindow.location.reload();<\\/script>'><\\/iframe>\";GGGGGCsQMrGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 58,
+    "test_case_id": 19688,
+    "csp": "default-src 'sha256-HASH' http://127.0.0.1:8080; script-src-attr *;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#19688 - executed: ['Safari'], non-executed: ['Chrome', 'Firefox']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGMaoPzGGGG src=self.html></iframe><script nonce=123>GGGGMaoPzGGGG.onload=_=>GGGGMaoPzGGGG.contentDocument.write('<script>fetch(`http://127.0.0.1:8000/script_receive$$$?sign=19688`)<\\/script>');GGGGMaoPzGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 59,
+    "test_case_id": 19688,
+    "csp": "default-src 'sha256-HASH' http://127.0.0.1:8080; script-src-attr 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#19688 - executed: ['Safari'], non-executed: ['Chrome', 'Firefox']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGMaoPzGGGG src=self.html></iframe><script nonce=123>GGGGMaoPzGGGG.onload=_=>GGGGMaoPzGGGG.contentDocument.write('<script>fetch(`http://127.0.0.1:8000/script_receive$$$?sign=19688`)<\\/script>');GGGGMaoPzGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 60,
+    "test_case_id": 78348,
+    "csp": "default-src http://127.0.0.1:8080 'unsafe-hashes'; script-src-elem 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#78348 - executed: ['Safari'], non-executed: ['Chrome', 'Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGhSNJcGGGGG src=self.html></iframe><script nonce=123>GGGGGhSNJcGGGGG.onload=_=>GGGGGhSNJcGGGGG.contentDocument.write(\"<li id=GGGGhSNJcGGGG><\\/li><script nonce=123>GGGGhSNJcGGGG.innerHTML+='<iframe srcdoc=\\x22<script src=http://127.0.0.1:8082/blocked_http.js$$$?sign=78348 nonce=123><\\\\/script>\\x22><\\\\/iframe>'<\\/script>\");GGGGGhSNJcGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 61,
+    "test_case_id": 46875,
+    "csp": "default-src 'none'; script-src-elem http://127.0.0.1:8080 'unsafe-inline';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#46875 - executed: ['Safari'], non-executed: ['Chrome', 'Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGsRargGGGGG src=about:blank></iframe><script>GGGGGsRargGGGGG.onload=_=>GGGGGsRargGGGGG.contentDocument.write(\"<iframe srcdoc='<iframe id=GGGsRargGGG src=self.html><\\/iframe><script nonce=123>GGGsRargGGG.onload=_=>GGGsRargGGG.contentDocument.write(\\x22<script src=http://127.0.0.1:8080/allowed_http.js$$$?sign=46875 nonce=123><\\\\/script>\\x22);GGGsRargGGG.contentWindow.location.reload();<\\/script>'><\\/iframe>\");GGGGGsRargGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 62,
+    "test_case_id": 46875,
+    "csp": "default-src http://127.0.0.1:8080 'unsafe-inline'; script-src-attr http://127.0.0.1:8080 http://127.0.0.1:8000;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#46875 - executed: ['Safari'], non-executed: ['Chrome', 'Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGsRargGGGGG src=about:blank></iframe><script>GGGGGsRargGGGGG.onload=_=>GGGGGsRargGGGGG.contentDocument.write(\"<iframe srcdoc='<iframe id=GGGsRargGGG src=self.html><\\/iframe><script nonce=123>GGGsRargGGG.onload=_=>GGGsRargGGG.contentDocument.write(\\x22<script src=http://127.0.0.1:8080/allowed_http.js$$$?sign=46875 nonce=123><\\\\/script>\\x22);GGGsRargGGG.contentWindow.location.reload();<\\/script>'><\\/iframe>\");GGGGGsRargGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 63,
+    "test_case_id": 1574,
+    "csp": "default-src 'none'; script-src-elem http://127.0.0.1:8080 'unsafe-inline';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#1574 - executed: ['Safari'], non-executed: ['Chrome', 'Firefox']\n",
+    "test_page": "<!--window.open,Script--><script>w=window.open(\"self.js\"); w.document.write(\"<iframe id=GGGrWfUcGGG src=self.html><\\/iframe><script nonce=123>GGGrWfUcGGG.onload=_=>GGGrWfUcGGG.contentDocument.write('<script src=http://127.0.0.1:8080/allowed_http.js$$$?sign=1574><\\\\/script>');GGGrWfUcGGG.contentWindow.location.reload();<\\/script>\");</script>\n"
+  },
+  {
+    "idx": 64,
+    "test_case_id": 1574,
+    "csp": "default-src 'strict-dynamic' http://127.0.0.1:8080; script-src http://127.0.0.1:8080 'unsafe-inline';connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#1574 - executed: ['Safari'], non-executed: ['Chrome', 'Firefox']\n",
+    "test_page": "<!--window.open,Script--><script>w=window.open(\"self.js\"); w.document.write(\"<iframe id=GGGrWfUcGGG src=self.html><\\/iframe><script nonce=123>GGGrWfUcGGG.onload=_=>GGGrWfUcGGG.contentDocument.write('<script src=http://127.0.0.1:8080/allowed_http.js$$$?sign=1574><\\\\/script>');GGGrWfUcGGG.contentWindow.location.reload();<\\/script>\");</script>\n"
+  },
+  {
+    "idx": 65,
+    "test_case_id": 43668,
+    "csp": "default-src *; script-src 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#43668 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGjykkrGGGGG src=about:blank></iframe><script nonce=123>GGGGGjykkrGGGGG.onload=_=>GGGGGjykkrGGGGG.contentDocument.write(\"<iframe id=GGGGjykkrGGGG src=self.html><\\/iframe><script nonce=123>GGGGjykkrGGGG.onload=_=>GGGGjykkrGGGG.contentDocument.write('<iframe id=GGGjykkrGGG src=self.html><\\\\/iframe><script>GGGjykkrGGG.onload=_=>GGGjykkrGGG.contentDocument.write(\\x22<script src=http://127.0.0.1:8000/self.js$$$?sign=43668><\\\\\\\\/script>\\x22);GGGjykkrGGG.contentWindow.location.reload();<\\\\/script>');GGGGjykkrGGGG.contentWindow.location.reload();<\\/script>\");GGGGGjykkrGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 66,
+    "test_case_id": 19688,
+    "csp": "default-src *; script-src 'nonce-123' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#19688 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe srcdoc=\"<iframe id=GGGGMaoPzGGGG src=self.html></iframe><script nonce=123>GGGGMaoPzGGGG.onload=_=>GGGGMaoPzGGGG.contentDocument.write('<script>fetch(`http://127.0.0.1:8000/script_receive$$$?sign=19688`)<\\/script>');GGGGMaoPzGGGG.contentWindow.location.reload();</script>\"></iframe>\n"
+  },
+  {
+    "idx": 67,
+    "test_case_id": 645,
+    "csp": "default-src http://127.0.0.1:8080 http://127.0.0.1:8000; script-src 'sha256-HASH' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#645 - executed: ['Firefox'], non-executed: ['Chrome', 'Safari']\n",
+    "test_page": "<!--window.open,Script--><script nonce=123>w=window.open(\"self.js\"); w.document.write(\"<iframe id=GGGUCYrIGGG src=about:blank><\\/iframe><script>GGGUCYrIGGG.onload=_=>GGGUCYrIGGG.contentWindow.eval('var o=document.createElement(`script`);o.src=`http://127.0.0.1:8082/blocked_http.js$$$?sign=645`;o.nonce=123;document.body.appendChild(o);void(0);');GGGUCYrIGGG.src='self.html';GGGUCYrIGGG.contentWindow.location.reload();<\\/script>\");</script>\n"
+  },
+  {
+    "idx": 68,
+    "test_case_id": 78348,
+    "csp": "default-src http://127.0.0.1:8080 http://127.0.0.1:8000; script-src 'sha256-HASH' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#78348 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGhSNJcGGGGG src=self.html></iframe><script nonce=123>GGGGGhSNJcGGGGG.onload=_=>GGGGGhSNJcGGGGG.contentDocument.write(\"<li id=GGGGhSNJcGGGG><\\/li><script nonce=123>GGGGhSNJcGGGG.innerHTML+='<iframe srcdoc=\\x22<script src=http://127.0.0.1:8082/blocked_http.js$$$?sign=78348 nonce=123><\\\\/script>\\x22><\\\\/iframe>'<\\/script>\");GGGGGhSNJcGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 69,
+    "test_case_id": 79242,
+    "csp": "default-src http://127.0.0.1:8080 http://127.0.0.1:8000; script-src 'sha256-HASH' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#79242 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGNAFYLGGGGG src=self.html></iframe><script nonce=123>GGGGGNAFYLGGGGG.onload=_=>GGGGGNAFYLGGGGG.contentDocument.write(\"<audio src/onerror='eval(`var o=document.createElement(\\x22script\\x22);o.src=\\x22http://127.0.0.1:8082/blocked_http.js$$$?sign=79242\\x22;o.nonce=123;document.body.appendChild(o);void(0);`)'><\\/audio>\");GGGGGNAFYLGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 70,
+    "test_case_id": 78359,
+    "csp": "default-src http://127.0.0.1:8080 http://127.0.0.1:8000; script-src 'sha256-HASH' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#78359 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGdToKSGGGGG src=self.html></iframe><script nonce=123>GGGGGdToKSGGGGG.onload=_=>GGGGGdToKSGGGGG.contentDocument.write(\"<li id=GGGGdToKSGGGG><\\/li><script nonce=123>GGGGdToKSGGGG.innerHTML+='<audio oncanplay=\\x22fetch(`http://127.0.0.1:8000/script_receive$$$?sign=78359`)\\x22><source src=self.mp3 type=audio/mpeg><\\\\/audio>'<\\/script>\");GGGGGdToKSGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 71,
+    "test_case_id": 78967,
+    "csp": "default-src http://127.0.0.1:8080 http://127.0.0.1:8000; script-src 'sha256-HASH' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#78967 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGJWszJGGGGG src=self.html></iframe><script nonce=123>GGGGGJWszJGGGGG.onload=_=>GGGGGJWszJGGGGG.contentDocument.write(\"<iframe srcdoc='<iframe id=GGGJWszJGGG src=about:blank><\\/iframe><script>GGGJWszJGGG.onload=_=>GGGJWszJGGG.contentDocument.write(\\x22<script src=http://127.0.0.1:8082/blocked_http.js$$$?sign=78967><\\\\/script>\\x22);GGGJWszJGGG.contentWindow.location.reload();<\\/script>'><\\/iframe>\");GGGGGJWszJGGGGG.contentWindow.location.reload();</script>\n"
+  },
+  {
+    "idx": 72,
+    "test_case_id": 79928,
+    "csp": "default-src http://127.0.0.1:8080 http://127.0.0.1:8000; script-src 'sha256-HASH' http://127.0.0.1:8080;connect-src http://127.0.0.1:8000;\n",
+    "execution_result": "#79928 - executed: ['Chrome', 'Safari'], non-executed: ['Firefox']\n",
+    "test_page": "<!--Script--><iframe id=GGGGGpZfFdGGGGG src=self.html></iframe><script nonce=123>GGGGGpZfFdGGGGG.onload=_=>GGGGGpZfFdGGGGG.contentDocument.write(\"<iframe id=GGGGpZfFdGGGG src=about:blank><\\/iframe><script nonce=123>GGGGpZfFdGGGG.onload=_=>GGGGpZfFdGGGG.contentDocument.write('<audio oncanplay=\\x22var o=document.createElement(`script`);o.src=`http://127.0.0.1:8080/allowed_http.js$$$?sign=79928`;document.body.appendChild(o);void(0);\\x22><source src=self.mp3 type=audio/mpeg><\\\\/audio>');GGGGpZfFdGGGG.contentWindow.location.reload();<\\/script>\");GGGGGpZfFdGGGGG.contentWindow.location.reload();</script>\n"
+  }
+]

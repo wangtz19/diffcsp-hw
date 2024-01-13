@@ -1,4 +1,4 @@
-CSP_FILE = "../testing_csp_list.txt"
+CSP_FILE = "../sampled_testing_csp_list.txt"
 OUTPUT_SQL = "install.sql"
 
 SQL = '''
@@ -6,18 +6,14 @@ DROP DATABASE IF EXISTS cspuzz_result;
 CREATE DATABASE cspuzz_result;
 USE cspuzz_result;
 
-DROP USER IF EXISTS 'cspuzz';
-
-CREATE USER 'cspuzz'@'%' IDENTIFIED WITH mysql_native_password BY 'cspuzz';
-
-FLUSH PRIVILEGES;
-
-CREATE TABLE CSP_STATUS (csp_id INTEGER PRIMARY KEY, com_android_chrome BOOLEAN DEFAULT FALSE, com_UCMobile_intl BOOLEAN DEFAULT FALSE, org_mozilla_firefox BOOLEAN DEFAULT FALSE, com_opera_browser BOOLEAN DEFAULT FALSE, com_opera_mini_native BOOLEAN DEFAULT FALSE, com_uc_browser_en BOOLEAN DEFAULT FALSE, mobi_mgeek_TunnyBrowser BOOLEAN DEFAULT FALSE, com_yandex_browser BOOLEAN DEFAULT FALSE, com_explore_web_browser BOOLEAN DEFAULT FALSE, com_mx_browser BOOLEAN DEFAULT FALSE, org_adblockplus_browser BOOLEAN DEFAULT FALSE, com_apusapps_browser BOOLEAN DEFAULT FALSE);
+CREATE TABLE CSP_STATUS (csp_id INTEGER PRIMARY KEY, Chrome BOOLEAN DEFAULT FALSE, Firefox BOOLEAN DEFAULT FALSE, Safari BOOLEAN DEFAULT FALSE, com_android_chrome BOOLEAN DEFAULT FALSE, com_UCMobile_intl BOOLEAN DEFAULT FALSE, org_mozilla_firefox BOOLEAN DEFAULT FALSE, com_opera_browser BOOLEAN DEFAULT FALSE, com_opera_mini_native BOOLEAN DEFAULT FALSE, com_uc_browser_en BOOLEAN DEFAULT FALSE, mobi_mgeek_TunnyBrowser BOOLEAN DEFAULT FALSE, com_yandex_browser BOOLEAN DEFAULT FALSE, com_explore_web_browser BOOLEAN DEFAULT FALSE, com_mx_browser BOOLEAN DEFAULT FALSE, org_adblockplus_browser BOOLEAN DEFAULT FALSE, com_apusapps_browser BOOLEAN DEFAULT FALSE);
 CREATE TABLE CSP_LIST (csp_id INTEGER PRIMARY KEY, csp_directive TEXT);
 {}
 
 {}
 
+DROP USER IF EXISTS 'cspuzz';
+CREATE USER 'cspuzz'@'%' IDENTIFIED WITH mysql_native_password BY 'cspuzz';
 GRANT ALL PRIVILEGES ON *.* TO 'cspuzz'@'%';
 
 FLUSH PRIVILEGES;

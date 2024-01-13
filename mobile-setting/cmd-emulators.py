@@ -21,6 +21,7 @@ def get_available_device():
 			device_id_list.append(device_id)
 
 	return device_id_list
+	# return ["device_1"]
 
 def get_installed_apps(device):
 	cmd = [f'{PLATFORM_PATH}/adb', '-s', device, 'shell', 'pm', 'list', 'packages', '-f']
@@ -40,6 +41,7 @@ def install_app(apk, file_path, device):
 		print(f'{device} has installed {apk}!')
 		return
 	print(f'Installing {apk} on devices {device}')
+	
 	
 	install_cmd = [f'{PLATFORM_PATH}/adb', '-s', device, 'install', '-r']
 	install_cmd.append("-g")
@@ -88,7 +90,8 @@ def force_stop_all_emulators():
 def start_emulators(num_devices):
 	port = 5554
 	for device in range(1,num_devices + 1):
-		cmd_text = f'nohup {EMULATOR_PATH}/emulator @device_{device} -no-window -no-snapshot -memory 4096 -verbose -no-audio -camera-back none -camera-front none -no-boot-anim -screen no-touch -wipe-data -no-snapshot-load -no-snapshot-save -cores 2 -no-passive-gps -port {port}&'		
+		cmd_text = f'xvfb-run nohup {EMULATOR_PATH}/emulator @device_{device} -no-window -no-snapshot -memory 4096 -verbose -no-audio -camera-back none -camera-front none -no-boot-anim -screen no-touch -wipe-data -no-snapshot-load -no-snapshot-save -cores 1 -no-passive-gps -port {port} &'		
+		print(cmd_text)
 		subprocess.run(cmd_text, shell=True)				
 		port += 2
 		time.sleep(3)
